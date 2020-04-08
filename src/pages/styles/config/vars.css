@@ -1,0 +1,31 @@
+:root {
+  /* color palette */
+--c-primary: #310049;
+--c-secundary: #3AB24F;
+--c-third: #231F20;
+--c-four: #CFD7E2;
+--c-five: #F7F7F7;
+--c-six: #D2E043;
+--c-text: #EBEBEB;
+--c-text-dark: #878C92;
+  /* layout */
+--gutter: 16px;
+--max-width: 1366px;
+  /* typography */
+--f-primary: 'Fira Mono', monospace;
+--f-secondary: 'Fira Sans', sans-serif;
+--f-third: 'Fira Code', monospace;
+  /* font size */
+--f-h1: 48px;
+--f-h2: 32px;
+--f-h3: 24px;
+--f-normal: 26px;
+--f-regular: 18px;
+--f-small: 16px;
+--f-smaller: 12px;
+  /* weight */
+--light: 300;
+--regular: 400;
+--medium: 500;
+--bold: 700;
+}
