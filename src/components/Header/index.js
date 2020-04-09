@@ -1,28 +1,24 @@
-import PropTypes from "prop-types"
-import React from "react"
+import PropTypes from "prop-types";
+import React from "react";
 
-import "./Header.scss"
+import "./Header.scss";
 
 const Header = () => (
+  <header className="header container mx-auto">
+    <h1 className="">Developer Advocate at Heroku</h1>
 
-  <header className="header">
-
-    <h1 className="">
-      Developer Advocate at Heroku
-    </h1>
-
-    <a href="#" className="btn-cta">visit</a>
-
+    <a href="#" className="btn-cta">
+      visit
+    </a>
   </header>
-
-)
+);
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
-}
+};
 
 Header.defaultProps = {
   siteTitle: ``,
-}
+};
 
-export default Header
+export default Header;
