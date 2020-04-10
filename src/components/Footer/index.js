@@ -6,7 +6,7 @@ export default class Footer extends Component {
     return (
       <footer className="section-footer">
         <div className="l-container">
-          <p> © copyright 2020 - julián duque and mantid llc </p>
+          <p>copyright © 2020 - julián duque and mantid llc</p>
         </div>
       </footer>
     );
