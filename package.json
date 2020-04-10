@@ -3,7 +3,7 @@
   "private": true,
   "description": "Julián Duque - Developer and Educator",
   "version": "1.0.0",
-  "author": "Fluxion Graphics & Codes <fluxionlat@gmail.com>",
+  "author": "FLUXION - graphics & codes <fluxionlat@gmail.com>",
   "dependencies": {
     "gatsby": "^2.18.4",
     "gatsby-image": "^2.2.34",

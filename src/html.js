@@ -1,5 +1,5 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from "react";
+import PropTypes from "prop-types";
 
 export default function HTML(props) {
   return (
@@ -12,6 +12,10 @@ export default function HTML(props) {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         {props.headComponents}
+        <link
+          href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+          rel="stylesheet"
+        ></link>
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
@@ -24,10 +28,9 @@ export default function HTML(props) {
           dangerouslySetInnerHTML={{ __html: props.body }}
         />
         {props.postBodyComponents}
-        
       </body>
     </html>
-  )
+  );
 }
 
 HTML.propTypes = {
@@ -37,4 +40,4 @@ HTML.propTypes = {
   preBodyComponents: PropTypes.array,
   body: PropTypes.string,
   postBodyComponents: PropTypes.array,
-}
+};

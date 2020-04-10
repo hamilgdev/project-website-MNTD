@@ -1,31 +1,59 @@
 :root {
-  /* color palette */
---c-primary: #310049;
---c-secundary: #3AB24F;
---c-third: #231F20;
---c-four: #CFD7E2;
---c-five: #F7F7F7;
---c-six: #D2E043;
---c-text: #EBEBEB;
---c-text-dark: #878C92;
-  /* layout */
---gutter: 16px;
---max-width: 1366px;
-  /* typography */
---f-primary: 'Fira Mono', monospace;
---f-secondary: 'Fira Sans', sans-serif;
---f-third: 'Fira Code', monospace;
-  /* font size */
---f-h1: 48px;
---f-h2: 32px;
---f-h3: 24px;
---f-normal: 26px;
---f-regular: 18px;
---f-small: 16px;
---f-smaller: 12px;
-  /* weight */
---light: 300;
---regular: 400;
---medium: 500;
---bold: 700;
+/* COLOR PALETTE */
+  /* Primary color */
+  --c-pri-lighter-200: #A600F8;
+  --c-pri-lighter-100: #9300DB;
+  --c-pri-main: #310049;
+  --c-pri-darker-100: #6C00A0;
+  --c-pri-darker-200: #580083;
+  /* Secondary color */
+  --c-sec-lighter-200: #83D792;
+  --c-sec-lighter-100: #75D285;
+  --c-sec-main: #3AB24F;
+  --c-sec-darker-100: #67CE79;
+  --c-sec-darker-200: #5AC96D;
+  /* Third color */
+  --c-thi-lighter-200: #817276;
+  --c-thi-lighter-100: #716568;
+  --c-thi-main: #231F20;
+  --c-thi-darker-100: #423B3D;
+  --c-thi-darker-200: #52494B;
+  /* Fourth color */
+  --c-fou-lighter-100: #E5EAF0;
+  --c-fou-main: #CFD7E2;
+  --c-fou-darker-100: #D5DCE6;
+  /* Accents color */
+  --c-acc-main: #F7F7F7;
+/* LAYOUT */
+  --gutter: 16px;
+  --max-width: 1280px;
+/* TYPOGRAPHY */
+  --f-primary: 'Fira Mono', monospace;
+  --f-secondary: 'Fira Sans', sans-serif;
+  --f-third: 'Fira Code', monospace;
+/* FONT SIZE */
+  /* primary */
+  --fp-h1-title: 48px;
+  --fp-h2-subtitle: 36px;
+  --fp-h3-subtitle: 28px;
+  --fp-h4-normal: 24px;
+  --fp-h5-regular: 18px;
+  --fp-h6-small: 16px;
+  --fp-smaller: 12px;
+  --fp-ultrasmaller: 10px;
+  /* secondary */
+  --fs-big: 26px;
+  --fs-normal: 22px;
+  --fs-regular: 18px;
+  --fs-small: 16px;
+  --fs-smaller: 12px;
+  --fs-ultrasmaller: 9px;
+  /* Third */
+  --ft-big: 26px;
+  --ft-regular: 18px;
+  --ft-normal: 16px;
+  --ft-small: 12px;
+/* FONT WEIGHT */
+  --regular: 400;
+  --bold: 700;
 }
