@@ -1,0 +1,32 @@
+.app-layout {
+  display: grid;
+  grid-template-rows: 4rem 1fr 100px;
+  grid-template-columns: 1fr;
+  grid-template-areas: 'headerMobile'
+                       'main'
+                       'footer';
+
+
+  .aside { grid-area: headerMobile; }
+
+  .main { grid-area: main; } 
+
+  .footer { grid-area: footer; }
+
+  @media screen and (min-width : 1024px){
+
+    grid-template-rows: 1fr 100px;
+    grid-template-columns: 88px 1fr;
+    grid-template-areas: 'navBar main'
+                         'footer footer';
+
+    .aside { grid-area: navBar; }
+
+    .main { grid-area: main; } 
+  
+    .footer { grid-area: footer; }
+
+  }
+
+}
+
