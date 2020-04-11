@@ -1,0 +1,17 @@
+.section-footer {
+  background-color: var(--c-pri-main);
+  font-family: var(--f-third);
+  font-size: var(--ft-normal);
+  padding: var(--gutter);
+  text-align: center;
+  justify-content: center;
+  p {
+    text-transform: uppercase;
+    color: var(--c-fou-lighter-100);
+  }
+
+  /* Large (lg) */
+  @media (max-width: 1024px) {
+    font-size: var(--ft-small);
+  }
+}
