@@ -1,17 +1,19 @@
-.section-footer {
-  background-color: var(--c-pri-main);
-  font-family: var(--f-third);
-  font-size: var(--ft-normal);
-  padding: var(--gutter);
-  text-align: center;
+.footer {
+  display: flex;
   justify-content: center;
-  p {
+  align-items: center;
+  background-color: var(--c-pri-main);
+  &-copy {
+    font-family: var(--f-primary);
+    font-size: var(--ft-normal);
+    font-size: var(--fp-smaller);
     text-transform: uppercase;
-    color: var(--c-fou-lighter-100);
+    color: var(--c-acc-main);
+      & {
+        @media (min-width: 1024px) {
+          font-size: var(--fp-h5-regular);
+        }
+      }
+    }
   }
 
-  /* Large (lg) */
-  @media (max-width: 1024px) {
-    font-size: var(--ft-small);
-  }
-}

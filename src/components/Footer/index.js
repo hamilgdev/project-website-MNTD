@@ -4,9 +4,9 @@ import "./Footer.scss";
 export default class Footer extends Component {
   render() {
     return (
-      <footer className="section-footer">
+      <footer className="footer">
         <div className="l-container">
-          <p>copyright © 2020 - julián duque and mantid llc</p>
+          <p className="footer-copy">copyright © 2020 - julián duque and mantid llc</p>
         </div>
       </footer>
     );
