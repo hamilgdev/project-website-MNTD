@@ -1,0 +1,238 @@
+.section-about {
+  padding-top: var(--gutter);
+  &__description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+  }
+
+  &__avatar {
+    clip-path: circle(40% at 50% 50%);
+    max-width: 15em;
+    margin-left: 6em;
+  }
+
+  &__info {
+    text-align: center;
+    text-transform: uppercase;
+    padding: var(--gutter);
+    margin-left: 2em;
+    font-family: var(--f-third);
+    font-weight: var(--bold);
+    font-size: var(--fs-regular);
+    line-height: 2em;
+  }
+
+  &__social {
+    clip-path: polygon(26% 0, 100% 0, 100% 100%, 0% 100%);
+    background-color: var(--c-sec-main);
+    width: 140em;
+    height: 49em;
+
+    .logo {
+      margin-top: 5em;
+      margin-left: 24em;
+    }
+
+    .hastag {
+      font-family: var(--f-third);
+      font-size: var(--fs-samll);
+      color: var(--c-acc-main);
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      margin-top: 1.2em;
+      margin-left: 12em;
+      letter-spacing: 0.15em;
+    }
+
+    .title {
+      justify-content: center;
+      align-items: center;
+      font-family: var(--f-primary);
+      font-size: var(--fp-h4-normal);
+      font-weight: var(--bold);
+      color: var(--c-acc-main);
+      display: flex;
+      margin-top: 1em;
+      text-transform: uppercase;
+    }
+
+    .networks {
+      justify-content: center;
+      align-items: center;
+      display: inline-table;
+      margin-top: 1em;
+      margin-left: 24em;
+      margin-bottom: 20px;
+      .content {
+        display: flex;
+        color: var(--c-acc-main);
+        a {
+          color: var(--c-acc-main);
+          &:hover {
+            color: var(--c-pri-main);
+          }
+        }
+      }
+    }
+  }
+
+  &__text {
+    p {
+      padding: var(--gutter);
+      font-family: var(--f-secondary);
+      font-weight: var(--regular);
+      font-size: var(--fs-small);
+      padding-top: var(--gutter);
+      padding-bottom: var(--gutter);
+      margin: var(--gutter);
+      line-height: 2.2em;
+    }
+  }
+
+  &__p1 {
+    background-color: var(--c-acc-main);
+  }
+
+  .links {
+    color: var(--c-sec-main);
+    &:hover {
+      color: var(--c-sec-darker-200);
+    }
+  }
+
+  /* Small (sm) */
+  @media screen and (max-width: 360px) {
+    &__description {
+      flex-direction: column;
+    }
+    &__avatar {
+      clip-path: circle(40% at 50% 50%);
+      max-width: 12em;
+      margin-left: 55px;
+    }
+    &__info {
+      margin-left: 0;
+    }
+    &__social {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+      width: 100%;
+      height: 100%;
+
+      .logo {
+        margin-top: 3em;
+        margin-left: 4.9em;
+      }
+      .hastag {
+        margin-left: 0;
+      }
+      .networks {
+        margin-left: 6em;
+      }
+    }
+  }
+
+  /* Small (sm) */
+  @media screen and (max-width: 320px) {
+    &__description {
+      flex-direction: column;
+    }
+    &__avatar {
+      clip-path: circle(40% at 50% 50%);
+      max-width: 12em;
+      margin-left: 30px;
+    }
+    &__info {
+      margin-left: 0;
+    }
+    &__social {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+      width: 100%;
+      height: 100%;
+
+      .logo {
+        margin-top: 3em;
+        margin-left: 4em;
+      }
+      .hastag {
+        margin-left: 0;
+      }
+
+      .networks {
+        margin-left: 4em;
+      }
+    }
+  }
+
+  @media screen and (min-width: 375px) {
+    &__avatar {
+      margin-right: 5em;
+    }
+
+    &__info {
+      margin-left: 0;
+    }
+  }
+  /* Small (sm) */
+  @media screen and (max-width: 414px) {
+    &__description {
+      flex-direction: column;
+    }
+    &__avatar {
+      clip-path: circle(40% at 50% 50%);
+      max-width: 12em;
+      margin-left: 4.8em;
+    }
+    &__social {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+      width: 100%;
+      height: 100%;
+
+      .logo {
+        margin-top: 3em;
+        margin-left: 6.5em;
+      }
+
+      .hastag {
+        margin-left: 0;
+      }
+
+      .networks {
+        margin-left: 6.9em;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    &__description {
+      flex-direction: column;
+    }
+    &__avatar {
+      max-width: 14em;
+      margin-left: 12em;
+    }
+
+    &__info {
+      margin: var(--gutter);
+    }
+
+    &__social {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+      width: 100%;
+      height: 100%;
+
+      .logo {
+        margin-left: 17.5em;
+      }
+
+      .hastag {
+        margin-left: 0;
+      }
+      .networks {
+        margin-left: 17.5em;
+      }
+    }
+  }
+}
