@@ -7,8 +7,9 @@
     font-family: var(--f-primary);
     font-size: var(--ft-normal);
     font-size: var(--fp-smaller);
-    text-transform: uppercase;
     color: var(--c-acc-main);
+    text-transform: uppercase;
+    text-align: center;
       & {
         @media (min-width: 1024px) {
           font-size: var(--fp-h5-regular);

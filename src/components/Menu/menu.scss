@@ -7,7 +7,8 @@
   max-height: 4rem;
   padding: var(--gutter);
   background-color: var(--c-pri-main);
-
+  z-index: 100;
+  
   .logo,
   .logo-mobile {
     display: inline-block;
@@ -50,21 +51,11 @@
 
   .show-nav { transform: translateX(0); }
 
-  .social-menu {
+  .network-menu {
     display: flex;
     flex-direction: column;
     position: relative;
-    top: -5rem;
-    .icon-social {
-      margin-top: var(--gutter);
-      width: 38px;
-      height: 38px;
-      border-radius: 50%;
-      background-color: var(--c-pri-darker-200);
-      transition: var(--transition);
-      
-      &:hover { background-color: var(--c-sec-darker-100); }
-    }
+    a { margin-top: var(--gutter); }
   }
 
   .btn-menu {
