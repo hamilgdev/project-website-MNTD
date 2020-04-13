@@ -6,8 +6,6 @@ import IconTwitter from "../../images/svg/icons/icon-twitter.svg";
 import IconTwitch from "../../images/svg/icons/icon-twitch.svg";
 import IconYoutube from "../../images/svg/icons/icon-youtube.svg";
 
-
-// import Logo from "../images/logo"
 import "./menu.scss"
 
 class Menu extends React.Component {
@@ -52,18 +50,18 @@ class Menu extends React.Component {
 
         </ul>
       
-        <div className="social-menu">
-          <a href="#" className="icon-social">
+        <div className="network-menu">
+          <a href="#" className="icon-network">
             <span className="icon-twitter">
               <IconTwitter />
             </span>
           </a>
-          <a href="#" className="icon-social">
+          <a href="#" className="icon-network">
             <span className="icon-twitter">
               <IconTwitch />
             </span>
           </a>
-          <a href="#" className="icon-social">
+          <a href="#" className="icon-network">
             <span className="icon-twitter">
               <IconYoutube />
             </span>
