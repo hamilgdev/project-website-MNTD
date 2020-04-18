@@ -1,0 +1,33 @@
+.icon {
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+}
+
+
+// estilo iconos redes sociales - Page About
+.icon-network {
+  border-radius: 50%;
+  background-color: var(--c-pri-darker-200);
+  transition: var(--transition);
+  
+  &:hover { background-color: var(--c-sec-darker-100); }
+}
+
+// estilo icono post ariculo  - Page Blog
+
+  .icon-blog {
+    display: none;
+    @media only screen and (min-width : 1024px){
+      display: flex;
+      border-radius: 50%;
+      width: 48px;
+      height: 48px;
+    .icon-read {
+      position: relative;
+      top: 3.5px;
+      padding: 8px;
+      fill: var(--c-fou-darker-100);
+    }
+  }
+}
