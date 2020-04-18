@@ -8,15 +8,6 @@ import NavBar from "./Menu/"
 import Footer from "./Footer/"
 
 const Layout = ({ children }) => {
-  // const data = useStaticQuery(graphql`
-  //   query SiteTitleQuery {
-  //     site {
-  //       siteMetadata {
-  //         title
-  //       }
-  //     }
-  //   }
-  // `)
 
   return (
     <>

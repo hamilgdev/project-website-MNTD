@@ -51,17 +51,17 @@ class Menu extends React.Component {
         </ul>
       
         <div className="network-menu">
-          <a href="#" className="icon-network">
+          <a href="#" className="icon icon-network">
             <span className="icon-twitter">
               <IconTwitter />
             </span>
           </a>
-          <a href="#" className="icon-network">
+          <a href="#" className="icon icon-network">
             <span className="icon-twitter">
               <IconTwitch />
             </span>
           </a>
-          <a href="#" className="icon-network">
+          <a href="#" className="icon icon-network">
             <span className="icon-twitter">
               <IconYoutube />
             </span>
