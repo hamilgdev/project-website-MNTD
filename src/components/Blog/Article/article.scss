@@ -163,6 +163,7 @@
     .title {
       font-size: var(--fp-h4-normal);
     }
+    
     .description {
       font-size: var(--fp-h5-regular);
     }
@@ -191,6 +192,9 @@
     .title {
       font-size: var(--fp-h3-subtitle);
     }
+    .subtitle{
+      font-size: var(--fs-normal);
+    }
     .description {
       font-size: var(--fs-normal);
     }
@@ -217,6 +221,9 @@
     }
     .title {
       font-size: var(--fp-h3-subtitle);
+    }
+    .subtitle{
+      font-size: var(--fs-normal);
     }
     .description {
       font-size: var(--fs-normal);

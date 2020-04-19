@@ -3,7 +3,7 @@ import "./article.scss";
 import IconTwitter from "../../../images/svg/icons/icon-twitter.svg";
 import IconFacebook from "../../../images/svg/icons/icon-facebook.svg";
 import IconLinkedin from "../../../images/svg/icons/icon-linkedin.svg";
-import IconRead from "../../../images/svg/icons/icon-read.svg";
+// import IconRead from "../../../images/svg/icons/icon-read.svg";
 import IconRowLeft from "../../../images/svg/icons/icon-rowleft.svg";
 
 export default class Article extends Component {
@@ -23,37 +23,37 @@ export default class Article extends Component {
           <div className="share l-outer-m">
             <p>share</p>
             <div className="content-network">
-              <span className="icon icon-network icon-twitter">
-                <IconTwitter />
-              </span>
               <a
-                className="nickname-network"
                 href="https://twitter.com/julian_duque"
                 target="_blank"
                 rel="noopener noreferrer"
-              ></a>
+              >
+                <span className="icon icon-network icon-twitter">
+                  <IconTwitter />
+                </span>
+              </a>
             </div>
             <div className="content-network">
-              <span className="icon icon-network icon-twitter">
-                <IconFacebook />
-              </span>
               <a
-                className="nickname-network"
-                href="https://twitter.com/julian_duque"
+                href="https://facebook.com/jduquej"
                 target="_blank"
                 rel="noopener noreferrer"
-              ></a>
+              >
+                <span className="icon icon-network icon-twitter">
+                  <IconFacebook />
+                </span>
+              </a>
             </div>
             <div className="content-network">
-              <span className="icon icon-network icon-twitter">
-                <IconLinkedin />
-              </span>
               <a
-                className="nickname-network"
-                href="https://twitter.com/julian_duque"
+                href="https://www.linkedin.com/in/juliandavidduque"
                 target="_blank"
                 rel="noopener noreferrer"
-              ></a>
+              >
+                <span className="icon icon-network icon-twitter">
+                  <IconLinkedin />
+                </span>
+              </a>
             </div>
           </div>
         </div>
@@ -111,20 +111,20 @@ export default class Article extends Component {
             </p>
             <br />
             <p>
-              This will ask for you email and will send you a verification
-              email, just by clicking on verify will log you in the platform,
-              it's like magic!
+              This will ask for your email and will send you a Verification
+              email, just by clicking on Verify will log you in the platform,
+              it's like magic 🔮!
             </p>
             <p className="code l-outer-m l-inner-p border-radius">
               $ now login
             </p>
 
             <h2 className="title l-outer-m">create your first microservices</h2>
-            <p>
+            <p className="l-outer-m">
               We are ready to start creating our first microservice (on
               serverless application, you name it).
             </p>
-            <br />
+
             <p>
               Now provides a list of examples, for our exercise we are going to
               use Node.js ⬢, but hey!, Now supports other languages and
@@ -147,7 +147,6 @@ export default class Article extends Component {
                   ZEIT Now is a cloud platform to deploy serverless
                   applications, one of the things I like the most about Now...
                 </p>
-                
               </article>
             </a>
             <a className="post-link" href="#">
