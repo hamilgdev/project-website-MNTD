@@ -16,7 +16,7 @@ class Blog extends Component {
 
           <h2 className="last-posts__title  posts-title l-outer-m">ultima publicación</h2>
          
-          <a className="post-link" href="#">
+          <a className="post-link" href="article">
             <article className="post-article last-post">
               <h2 className="post-article__title">
                 Deploying Node.js microservices to ZEIT ▲ Now
@@ -81,7 +81,7 @@ class Blog extends Component {
           
         </div>
 
-        <hr className="separator-blog l-outer-m" />
+        <hr className="separator l-outer-m" />
 
         <div className="other-posts l-inner-p">
 
