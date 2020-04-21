@@ -7,20 +7,52 @@
 
 .l-container--full { max-width: 100%; }
 
+// MARGENES ---------------------------
+
+// margenes top y bottom
 .l-outer-m {
   margin-top: var(--gutter);
   margin-bottom: var(--gutter);
 }
 
 .l-outer-mx32 {
-  margin-top: calc(var(--gutter) * 2);
-  margin-bottom: calc(var(--gutter) * 2);
+  @media screen and (max-width : 1024px) {
+    margin-top: calc(var(--gutter) * 2);
+    margin-bottom: calc(var(--gutter) * 2);
+  }
 }
 
 .l-outer-mx64 {
-  margin-top: calc(var(--gutter) * 4);
-  margin-bottom: calc(var(--gutter) * 4);
+  @media screen and (max-width : 1024px) {
+    margin-top: calc(var(--gutter) * 4);
+    margin-bottom: calc(var(--gutter) * 4);
+  }
 }
+
+// margenes left y right
+.l-inner-m {
+  @media screen and (min-width : 1024px) {
+    margin-left: var(--gutter);
+    margin-right: var(--gutter);
+  }
+}
+
+.l-inner-mx32 {
+  @media screen and (min-width : 1024px) {
+    margin-left: calc(var(--gutter) * 2);
+    margin-right: calc(var(--gutter) * 2);
+  }
+}
+
+.l-inner-mx64 {
+  @media screen and (min-width : 1024px) {
+    margin-left: calc(var(--gutter) * 4);
+    margin-right: calc(var(--gutter) * 4);
+  }
+}
+
+
+// PADDING ---------------------------
 
 .l-inner-p {
   padding-top: var(--gutter);

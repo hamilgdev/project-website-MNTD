@@ -1,83 +1,139 @@
 import React, { Component } from "react";
+
+import IconRead from "../../images/svg/icons/icon-read.svg";
+
 import "./home.scss";
+
 export default class Home extends Component {
   render() {
     return (
       <section className="section-home" id="/">
-        <div className="section-home__content-banner">
-          <p className="section-home__text-banner">
-            Developer Advocate <br className="desktop" /> at
-          </p>
-          <div className="section-home__text-banner2">
-            <p>Heroku</p>
-            <a>visit</a>
-          </div>
+
+        <div className="content-banner">
+
+          <h1 className="title section-home__title l-inner-p l-inner-mx32">
+            developer advocate at
+            <span className="section-home__content-cta">heroku
+              <a 
+              className="btn btn-cta btn-visit" 
+              href="#"
+              target="_blank"
+              >
+                visit</a>
+            </span>
+          </h1>
+
         </div>
-        <div className="section-home__stay-tuned">
-          <p>
-            stay tuned for more live <p className="node">Node.js</p>{" "}
+
+        <div className="content-stay-tuned">
+
+          <p className="section-home__description l-inner-p">
+            stay tuned for more live <span className="tag-nodejs">Node.js</span>
           </p>
-          <a
-            href="https://www.twitch.tv/julianduque"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            go to twitch
+          <a className="btn btn-twitch"
+             href="#"
+             target="_blank"
+          >go to twitch
           </a>
         </div>
 
-        <div className="section-home__content-video">
-          <div className="section-home__video-recent">
-            <h4 className="section-home__title">mis recomendados</h4>
-            <h4>video más recientes</h4>
-            <div className="section-home__first-row">
-              <iframe
-                title="video"
-                className="section-home__video"
-                src="https://www.youtube.com/embed/Imeq3GeRttw"
-              ></iframe>
+        <div className="content-recommended recommended l-inner-p">
+          
+          <h2 className="title recommended-title">
+            mis recomendados
+          </h2>
+
+          <div className="recent-videos l-outer-mx32">
+
+            <h3 className="title recent-videos__title l-outer-m">
+              videos más recientes
+            </h3>
+
+            <div className="recent-videos__item highlight-video video">
+              <iframe 
+                className="recent-videos__video"
+                src="https://www.youtube.com/embed/Imeq3GeRttw?controls=0" frameborder="0" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+              </iframe>
             </div>
-            <div className="section-home__second-row">
-              <iframe
-                title="video"
-                className="section-home__video"
-                src="https://www.youtube.com/embed/Imeq3GeRttw"
-              ></iframe>
-              <iframe
-                title="video"
-                className="section-home__video"
-                src="https://www.youtube.com/embed/Imeq3GeRttw"
-              ></iframe>
+
+            <div className="recent-videos__item video">
+              <iframe 
+                className="recent-videos__video"
+                src="https://www.youtube.com/embed/Imeq3GeRttw?controls=0" frameborder="0" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+              </iframe>
             </div>
+
+            <div className="recent-videos__item video">
+              <iframe 
+                className="recent-videos__video"
+                src="https://www.youtube.com/embed/Imeq3GeRttw?controls=0" frameborder="0" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+              </iframe>
+            </div>
+
           </div>
-          <div className="section-home__more-video">
-            <h4>ultimas publicaciones</h4>
-            <div className="section-home__posts">
-              <h4>Deploying Node.js microservices to ZEIT ▲ Now</h4>
-              <p>
-                {" "}
-                ZEIT Now is a cloud platform to deploy serverless applications,
-                one of the things I like the most about Now...
-              </p>
-            </div>
-            <div className="section-home__posts">
-              <h4>Deploying Node.js microservices to ZEIT ▲ Now</h4>
-              <p>
-                {" "}
-                ZEIT Now is a cloud platform to deploy serverless applications,
-                one of the things I like the most about Now...
-              </p>
-            </div>
-            <div className="section-home__posts">
-              <h4>Deploying Node.js microservices to ZEIT ▲ Now</h4>
-              <p>
-                {" "}
-                ZEIT Now is a cloud platform to deploy serverless applications,
-                one of the things I like the most about Now...
-              </p>
-            </div>
+
+          <div className="last-posts l-outer-mx32">
+
+            <h3 className="title last-posts__title l-outer-m">ultima publicación</h3>
+            
+            <a className="post-link highlight-post" href="#">
+              <article className="post-article last-post">
+                <h2 className="post-article__title">
+                  Deploying Node.js microservices to ZEIT ▲ Now
+                </h2>
+                <p className="post-article__description">
+                  ZEIT Now is a cloud platform to deploy serverless applications, one of the things I like the most about Now is their DX (Developer Experience), it makes it very pleasant to deploy microservices to the cloud...
+                </p>
+                <div className="icon icon-blog">
+                  <span className="icon-read">
+                    <IconRead />
+                  </span>
+                </div>
+              </article>
+            </a>
+
+            <a className="post-link" href="#">
+              <article className="post-article last-post">
+                <h2 className="post-article__title">
+                  Deploying Node.js microservices to ZEIT ▲ Now
+                </h2>
+                <p className="post-article__description">
+                  ZEIT Now is a cloud platform to deploy serverless applications, one of the things I like the most about Now...
+                </p>
+                <div className="icon icon-blog">
+                  <span className="icon-read">
+                    <IconRead />
+                  </span>
+                </div>
+              </article>
+            </a>
+
+            <a className="post-link" href="#">
+              <article className="post-article last-post">
+                <h2 className="post-article__title">
+                  Deploying Node.js microservices to ZEIT ▲ Now
+                </h2>
+                <p className="post-article__description">
+                  ZEIT Now is a cloud platform to deploy serverless applications, one of the things I like the most about Now...
+                </p>
+                <div className="icon icon-blog">
+                  <span className="icon-read">
+                    <IconRead />
+                  </span>
+                </div>
+              </article>
+            </a>
+
           </div>
+
         </div>
+
       </section>
     );
   }
