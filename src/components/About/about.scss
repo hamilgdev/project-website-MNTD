@@ -34,7 +34,7 @@
     background-color: var(--c-sec-main);
     @media only screen and (min-width : 1024px){
       padding: var(--gutter) 0;
-      border-radius: 1px;          
+      border-radius: 1px;
     }
   }
 
@@ -130,7 +130,11 @@
         clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
       }
 
-      &__information { grid-area: infoData; }
+      &__information { 
+        grid-area: infoData; 
+        margin-top: calc(var(--gutter) * 4);
+        margin-bottom: calc(var(--gutter) * 4); 
+      }
 
     }
 

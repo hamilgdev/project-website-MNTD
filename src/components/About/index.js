@@ -28,7 +28,7 @@ class About extends Component {
 
         </div>
 
-        <div className="section-about__networks l-outer-mx64">
+        <div className="section-about__networks">
 
           <figure className="logo section-about__logo l-inner-px32">
             <Logo />
@@ -115,7 +115,7 @@ class About extends Component {
           
         </div>
 
-        <div className="section-about__information l-outer-mx64">
+        <div className="section-about__information">
           <p className="section-about__description l-inner-p">
             {" "}
             I'm a community leader, public speaker, JavaScript/Node.js
