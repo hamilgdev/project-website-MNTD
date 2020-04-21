@@ -11,63 +11,12 @@
     text-transform: uppercase;
   }
 
-  .post-link {
-    display: block;
-  }
-
-  .post-article {
-    position: relative;
-    margin: var(--gutter) auto;
-    padding: 0 var(--gutter);
-    max-width: 600px;
-    background-color: var(--c-acc-main);
-    border-radius: var(--border-radius);
-    transition: var(--transition);
-    
-    .icon-blog {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: scale(0);
-      transition: var(--transition);
-    }
-
-    &:hover {
-      background-color: var(--c-fou-darker-100);
-
-      .icon-blog { 
-        transform: translate(-50%, -50%);
-        background-color: var(--c-acc-main); 
-      }
-      .icon-read { fill: var(--c-fou-darker-100); }
-    }  
-
-    &__title {
-      padding: var(--gutter) 0;
-      font-family: var(--f-primary);
-      font-size: var(--fp-smaller);
-      color: var(--c-thi-main);
-      text-transform: uppercase;
-    }
-
-    &__description {
-      padding-bottom: var(--gutter);
-      font-family: var(--f-secondary);
-      font-size: var(--fs-smaller);
-      color: var(--c-thi-lighter-100);
-
-    }
-  }
-
   .separator-blog {
-    grid-area: separator;
     border: 1px solid var(--c-fou-main);
-    width: 100%;
   }
 
 // estilo por separado para cada card de blog
   .last-posts {
-    grid-area: lastPosts;
 
     &__title {
       font-size: var(--fp-h4-normal);
@@ -76,7 +25,6 @@
   }
 
   .recent-posts {
-    grid-area: recentPosts;
 
     &__title {
       font-size: var(--fp-h5-regular);
@@ -84,7 +32,6 @@
   }
 
   .other-posts {
-    grid-area: otherPosts;
 
     &__title {
       font-size: var(--fp-h5-regular);
@@ -93,7 +40,6 @@
   }
 
   .more-posts {
-    grid-area: morePosts;
     
     &__title {
       padding: 0 var(--gutter);
@@ -138,36 +84,10 @@
                          'separator separator separator'
                          'otherPosts otherPosts morePosts';
 
-    @media only screen and (min-width : 1420px) {
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .recent-posts,
-    .other-posts {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto 1fr;
-      grid-gap: 20px;
-    }
-
-    .other-posts { 
-      grid-template-rows: calc(var(--gutter) * 4) auto;
-      grid-template-columns: auto; 
-    }
-
-    .recent-posts__title,
-    .other-posts__title {
-      grid-column: span 2;
-    }
-
-    .post-article {
-      margin: initial;
-      max-width: initial;
-    }
-
-
     .last-posts {
-        padding: 0;
+      grid-area: lastPosts;
+      padding: 0;
+
       &__title {
         font-size: var(--fp-h2-subtitle);
       }
@@ -178,19 +98,33 @@
 
         &__description { font-size: var(--fp-h5-regular); }
       }
+    }
 
+    .separator-blog {
+      grid-area: separator;
+      width: 100%;
+    }
+    
+    .recent-posts,
+    .other-posts {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto 1fr;
+      grid-gap: 20px;
     }
 
     .recent-posts {
+      grid-area: recentPosts;
 
       &__title {
         font-size: var(--fp-h3-subtitle);
       }
-
-
     }
 
-    .other-posts {
+    .other-posts { 
+      grid-area: otherPosts;
+      grid-template-rows: calc(var(--gutter) * 4) auto;
+      grid-template-columns: auto; 
 
       &__title {
         margin-bottom: 0;
@@ -206,10 +140,15 @@
       }
     }
 
+    .recent-posts__title,
+    .other-posts__title {
+      grid-column: span 2;
+    }
+
     .more-posts {
+      grid-area: morePosts;
       margin-top: calc(var(--gutter) * 4);
       
-
       &__title {
         padding: 0;
         font-size: var(--fp-h6-small);
@@ -219,9 +158,12 @@
         padding-left: var(--gutter);
         padding-right: var(--gutter);
       }
+    }
 
+    @media only screen and (min-width : 1420px) {
+      margin-left: auto;
+      margin-right: auto;
     }
 
   }
-
 }
