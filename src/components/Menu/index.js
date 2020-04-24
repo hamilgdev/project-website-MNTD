@@ -1,7 +1,6 @@
 import React from "react"
 import { navigate, Link } from 'gatsby'
 import Logo from "../../images/svg/logo.svg";
-import BtnMenu from "../../images/svg/icons/icon-menubar.svg";
 import IconTwitter from "../../images/svg/icons/icon-twitter.svg";
 import IconTwitch from "../../images/svg/icons/icon-twitch.svg";
 import IconYoutube from "../../images/svg/icons/icon-youtube.svg";
@@ -13,6 +12,7 @@ class Menu extends React.Component {
     super(props)
     this.state = {
       mobileMenuActive: false,
+      animateBarMenu: false
     }
   }
 
@@ -21,11 +21,18 @@ class Menu extends React.Component {
   }
 
   handleToggleMenu = () => {
-    this.setState({ mobileMenuActive: !this.state.mobileMenuActive })
+    this.setState({ 
+      mobileMenuActive: !this.state.mobileMenuActive,
+      animateBarMenu: !this.state.animateBarMenu
+    })
   }
 
   activeClass = () => {
     return this.state.mobileMenuActive ? "open" : "close"
+  }
+
+  animateClass = () => {
+    return this.state.mobileMenuActive ? "animate-bar" : ""
   }
 
   render() {
@@ -117,8 +124,7 @@ class Menu extends React.Component {
         aria-label="button-menu"
         onClick={e => this.activeMobile(e)}
       >
-        <span className="icon-bar">
-          <BtnMenu />
+        <span className={`icon-bar ${this.animateClass()}`}>
         </span>
       </button>
 

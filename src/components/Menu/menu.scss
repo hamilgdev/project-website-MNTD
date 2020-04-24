@@ -6,6 +6,7 @@
   min-width: 100%;
   max-height: 4rem;
   padding: var(--gutter);
+  text-align: center;
   background-color: var(--c-pri-main);
   z-index: 500;
   
@@ -30,7 +31,9 @@
     transform: translateX(-100%);
     opacity: .95;
     width: 88px;
-    @media screen and (max-width : 1024px) {
+    @media screen and (max-width : 1023px) {
+      border-right: 3px solid var(--c-pri-darker-200);
+
       &.close {
         transform: translateX(-100%);
       }
@@ -68,19 +71,59 @@
   }
 
   .btn-menu {
-    outline: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 11px 8px;
-    width: 45px;
+    width: 48px;
+    height: 38px;
     border: none;
     border-radius: var(--border-radius);
     background-color: var(--c-pri-darker-200);
     cursor: pointer;
     transition: var(--transition);
     z-index: 200;
+
     &:hover { background-color: var(--c-pri-darker-100); }
-    .icon-bar {
-      display: grid;
+    // dibujo del boton menú móvil
+    .icon-bar,
+    .icon-bar::after,
+    .icon-bar::before {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      content: '';
+      width: 80%;
+      background-color: var(--c-acc-main);
+      border-radius: var(--border-radius);
+      transition: var(--transition);
     }
+    .icon-bar { height: 11%; }
+    .icon-bar::after,
+    .icon-bar::before { 
+      width: 100%;
+      height: 100%; 
+    }
+    .icon-bar::after { top: -10px; }
+    .icon-bar::before { top: 10px; }
+    // animación para el botón menú
+    .animate-bar {
+      transition: var(--transition);
+      transform: rotateZ(45deg);
+    }
+    .animate-bar::after {
+      transition: var(--transition);
+      top:0px;
+      transform: rotateZ(0deg);
+    }
+    .animate-bar::before {
+      transition: var(--transition);
+      top:0px;
+      transform: rotateZ(90deg);
+    }
+
   }
 
   @media screen and (min-width : 1024px){
@@ -92,7 +135,6 @@
     border-right: 3px solid var(--c-pri-darker-200);
     padding: var(--gutter);
     background-color: var(--c-pri-main);
-    text-align: center;
 
     .btn-menu {
       display: none;
