@@ -9,6 +9,24 @@ import IconYoutube from "../../images/svg/icons/icon-youtube.svg";
 import "./menu.scss"
 
 class Menu extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      mobileMenuActive: false,
+    }
+  }
+
+  activeMobile = e => {
+    this.handleToggleMenu()
+  }
+
+  handleToggleMenu = () => {
+    this.setState({ mobileMenuActive: !this.state.mobileMenuActive })
+  }
+
+  activeClass = () => {
+    return this.state.mobileMenuActive ? "open" : "close"
+  }
 
   render() {
     return (
@@ -19,35 +37,59 @@ class Menu extends React.Component {
         <Logo />
       </a>
 
-      <nav className="main-nav">
+      <nav className={`main-nav ${this.activeClass()}`}>
         <ul className="main-menu" id="main-menu">
 
           <li className="main-menu__item">
-            <Link className="main-menu__link" to="/">
+            <Link 
+              className="main-menu__link" 
+              to="/"
+              onClick={e => this.activeMobile(e)}
+              activeClassName="active"
+            >
               home
             </Link>
           </li>
           <li className="main-menu__item">
-            <Link className="main-menu__link" to="/mntd">
+            <Link 
+              className="main-menu__link" 
+              to="/mntd"
+              onClick={e => this.activeMobile(e)}
+              activeClassName="active"
+            >
               mntd
             </Link>
           </li>
           <li className="main-menu__item">
-            <Link className="main-menu__link" to="/about">
+            <Link 
+              className="main-menu__link" 
+              to="/about"
+              onClick={e => this.activeMobile(e)}
+              activeClassName="active"
+            >
               about
             </Link>
           </li>
           <li className="main-menu__item">
-            <Link className="main-menu__link" to="/talks">
+            <Link 
+              className="main-menu__link" 
+              to="/talks"
+              onClick={e => this.activeMobile(e)}
+              activeClassName="active"
+            >
               talks
             </Link>
           </li>
           <li className="main-menu__item">
-            <Link className="main-menu__link" to="/blog">
+            <Link 
+              className="main-menu__link" 
+              to="/blog"
+              onClick={e => this.activeMobile(e)}
+              activeClassName="active"
+            >
               blog
             </Link>
           </li>
-
         </ul>
       
         <div className="network-menu">
@@ -73,6 +115,7 @@ class Menu extends React.Component {
         className="btn-menu"
         id="btn-menu"
         aria-label="button-menu"
+        onClick={e => this.activeMobile(e)}
       >
         <span className="icon-bar">
           <BtnMenu />
