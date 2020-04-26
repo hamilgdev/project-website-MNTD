@@ -40,7 +40,7 @@ class Menu extends React.Component {
       
     <aside className="aside" id="aside">
 
-      <a href="/" className="logo logo-mobile">
+      <a href="/" aria-label="logo-mobile" className="logo logo-mobile">
         <Logo />
       </a>
 
@@ -100,17 +100,17 @@ class Menu extends React.Component {
         </ul>
       
         <div className="network-menu">
-          <a href="#" className="icon icon-network">
+          <a href="#" aria-label="icon-network-twitter" className="icon icon-network">
             <span className="icon-twitter">
               <IconTwitter />
             </span>
           </a>
-          <a href="#" className="icon icon-network">
+          <a href="#" aria-label="icon-network-twitch" className="icon icon-network">
             <span className="icon-twitter">
               <IconTwitch />
             </span>
           </a>
-          <a href="#" className="icon icon-network">
+          <a href="#" aria-label="icon-network-youtube" className="icon icon-network">
             <span className="icon-twitter">
               <IconYoutube />
             </span>

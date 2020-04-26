@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./talks.scss";
-// import Talk from "../images/talk_node";
 import IconEye from "../../images/svg/icons/icon-eye.svg";
 
 export default class Talks extends Component {
@@ -8,11 +7,8 @@ export default class Talks extends Component {
     return (
       <section className="section-talks" id="talks">
         <div className="section-talks__content">
-          {/* <figure className="section-talks__video">
-            <Talk />
-          </figure> */}
           <iframe
-            title="video"
+            title="talksVideo"
             className="section-talks__video"
             src="https://www.youtube.com/embed/Imeq3GeRttw"
           ></iframe>
