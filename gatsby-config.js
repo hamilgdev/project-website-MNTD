@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Julián Duque - Delevoper and Educator`,
-    titleShort: `Julián Duque - MNTD LLC`,
+    titleShort: `Julián Duque`,
     description: `Hello, my name is Julián Duque, I'm from Medellín, Colombia 🇨🇴 but currently living in St. Petersburg, FL (Tampa Bay, FL) 🇺🇸.
     I'm a community leader, public speaker, JavaScript/Node.js evangelist, and an official Node.js collaborator. I work at NodeSource as a Solutions Architect and currently organizing JSConf and NodeConf Colombia, also helping organize Suncoast.js in St. Petersburg, FL, and MedellinJS, the largest JavaScript user group in Colombia with 4500+ registered members.`,
     author: `@fluxiongc`
