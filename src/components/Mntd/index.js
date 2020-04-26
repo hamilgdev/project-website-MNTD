@@ -52,7 +52,7 @@ export default class Mndt extends Component {
             <div className="recent-video__content card-widget__content">
               <div className="recent-video__element card-widget__element ratio-video">
                 <iframe 
-                  
+                  title="videoMNTD"
                   src="https://www.youtube.com/embed/Imeq3GeRttw?controls=0" frameBorder="0" 
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                 >
@@ -60,7 +60,7 @@ export default class Mndt extends Component {
               </div>
               <div className="recent-video__element card-widget__element ratio-video">
                 <iframe 
-                  
+                title="videoMNTD"
                   src="https://www.youtube.com/embed/Imeq3GeRttw?controls=0" frameBorder="0" 
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                 >
@@ -68,7 +68,7 @@ export default class Mndt extends Component {
               </div>
               <div className="recent-video__element card-widget__element ratio-video">
                 <iframe 
-                  
+                title="videoMNTD"
                   src="https://www.youtube.com/embed/Imeq3GeRttw?controls=0" frameBorder="0" 
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                 >
@@ -92,7 +92,7 @@ export default class Mndt extends Component {
               <div className="more-video__content card-widget__content">
                 <div className="more-video__element card-widget__element ratio-video">
                   <iframe 
-                    
+                  title="videoMNTD"
                     src="https://www.youtube.com/embed/Imeq3GeRttw?controls=0" frameBorder="0" 
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                   >
@@ -113,7 +113,7 @@ export default class Mndt extends Component {
               <div className="more-video__content card-widget__content">
                 <div className="more-video__element card-widget__element ratio-video">
                   <iframe 
-                    
+                  title="videoMNTD"
                     src="https://www.youtube.com/embed/Imeq3GeRttw?controls=0" frameBorder="0" 
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                   >
@@ -134,7 +134,7 @@ export default class Mndt extends Component {
               <div className="more-video__content card-widget__content">
                 <div className="more-video__element card-widget__element ratio-video">
                   <iframe 
-                    
+                  title="videoMNTD"
                     src="https://www.youtube.com/embed/Imeq3GeRttw?controls=0" frameBorder="0" 
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                   >
@@ -155,7 +155,7 @@ export default class Mndt extends Component {
               <div className="more-video__content card-widget__content">
                 <div className="more-video__element card-widget__element ratio-video">
                   <iframe 
-                    
+                  title="videoMNTD"
                     src="https://www.youtube.com/embed/Imeq3GeRttw?controls=0" frameBorder="0" 
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                   >
@@ -176,7 +176,7 @@ export default class Mndt extends Component {
               <div className="more-video__content card-widget__content">
                 <div className="more-video__element card-widget__element ratio-video">
                   <iframe 
-                    
+                  title="videoMNTD"
                     src="https://www.youtube.com/embed/Imeq3GeRttw?controls=0" frameBorder="0" 
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                   >
