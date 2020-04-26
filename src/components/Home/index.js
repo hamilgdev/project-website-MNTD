@@ -51,8 +51,8 @@ export default class Home extends Component {
 
             <div className="card-widget__element highlight-video ratio-video">
               <iframe 
-                className="video"
-                src="https://www.youtube.com/embed/Imeq3GeRttw?controls=0" frameborder="0" 
+                
+                src="https://www.youtube.com/embed/Imeq3GeRttw?controls=0" frameBorder="0" 
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
               >
               </iframe>
@@ -60,8 +60,8 @@ export default class Home extends Component {
 
             <div className="card-widget__element ratio-video">
               <iframe 
-                className="video"
-                src="https://www.youtube.com/embed/Imeq3GeRttw?controls=0" frameborder="0" 
+                
+                src="https://www.youtube.com/embed/Imeq3GeRttw?controls=0" frameBorder="0" 
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
               >
               </iframe>
@@ -69,8 +69,8 @@ export default class Home extends Component {
 
             <div className="card-widget__element ratio-video">
               <iframe 
-                className="video"
-                src="https://www.youtube.com/embed/Imeq3GeRttw?controls=0" frameborder="0" 
+                
+                src="https://www.youtube.com/embed/Imeq3GeRttw?controls=0" frameBorder="0" 
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
               >
               </iframe>

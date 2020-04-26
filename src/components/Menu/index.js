@@ -1,5 +1,5 @@
 import React from "react"
-import { navigate, Link } from 'gatsby'
+import { Link } from 'gatsby'
 import Logo from "../../images/svg/logo.svg";
 import IconTwitter from "../../images/svg/icons/icon-twitter.svg";
 import IconTwitch from "../../images/svg/icons/icon-twitch.svg";
