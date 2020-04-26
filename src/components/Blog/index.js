@@ -81,7 +81,7 @@ class Blog extends Component {
           
         </div>
 
-        <hr className="separator-blog l-outer-m" />
+        <hr className="separator separator-blog l-outer-m" />
 
         <div className="other-posts l-inner-p">
 

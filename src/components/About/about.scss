@@ -4,6 +4,8 @@
     margin: 0 auto;
     max-width: 450px;
     text-align: center;
+    margin-top: calc(var(--gutter) * 2);
+    margin-bottom: calc(var(--gutter) * 2);
   }
 
     &__photo {
@@ -32,6 +34,8 @@
     flex-direction: column;
     align-items: center;
     background-color: var(--c-sec-main);
+    margin-top: calc(var(--gutter) * 2);
+    margin-bottom: calc(var(--gutter) * 4);
     @media only screen and (min-width : 1024px){
       padding: var(--gutter) 0;
       border-radius: 1px;
@@ -90,6 +94,8 @@
   &__information {
     color: var(--c-thi-lighter-100);
     text-align: center;
+    margin-top: calc(var(--gutter) * 2);
+    margin-bottom: calc(var(--gutter) * 4);
     p:nth-child(1){
       background-color: var(--c-acc-main);
       border-radius: var(--border-radius);

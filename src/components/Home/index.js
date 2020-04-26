@@ -49,30 +49,30 @@ export default class Home extends Component {
               videos más recientes
             </h3>
 
-            <div className="recent-videos__item highlight-video video">
+            <div className="card-widget__element highlight-video ratio-video">
               <iframe 
-                className="recent-videos__video"
+                className="video"
                 src="https://www.youtube.com/embed/Imeq3GeRttw?controls=0" frameborder="0" 
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
+              >
               </iframe>
             </div>
 
-            <div className="recent-videos__item video">
+            <div className="card-widget__element ratio-video">
               <iframe 
-                className="recent-videos__video"
+                className="video"
                 src="https://www.youtube.com/embed/Imeq3GeRttw?controls=0" frameborder="0" 
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
+              >
               </iframe>
             </div>
 
-            <div className="recent-videos__item video">
+            <div className="card-widget__element ratio-video">
               <iframe 
-                className="recent-videos__video"
+                className="video"
                 src="https://www.youtube.com/embed/Imeq3GeRttw?controls=0" frameborder="0" 
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
+              >
               </iframe>
             </div>
 
