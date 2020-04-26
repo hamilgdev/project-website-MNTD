@@ -8,14 +8,15 @@
 @import 'styles/base/typography.scss';
 
 // Estilos utils assets
-@import 'styles/utils/layout.scss';
-@import 'styles/utils/cards.scss';
 @import 'styles/utils/videos.scss';
+@import 'styles/utils/widgets.scss';
 @import 'styles/utils/btn.scss';
 @import 'styles/utils/icons.scss';
 @import 'styles/utils/links.scss';
+@import 'styles/utils/decorative.scss';
 @import 'styles/utils/tags.scss';
 @import 'styles/utils/titles.scss';
+@import 'styles/utils/layout.scss';
 
 
 html {

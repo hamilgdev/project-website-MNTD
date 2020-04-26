@@ -16,7 +16,7 @@ class About extends Component {
     return (
       <section className="section-about" id="about">
 
-        <div className="section-about__info l-inner-p l-outer-mx32">
+        <div className="section-about__info l-inner-p">
 
           <figure className="section-about__photo l-outer-m">
             <Julian className="figure" />
@@ -205,6 +205,7 @@ class About extends Component {
             Fun fact: I love praying mantises and other type of critters! 💚💚💚
           </p>
         </div>
+      
       </section>
     );
   }

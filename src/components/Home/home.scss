@@ -81,20 +81,14 @@
       &__title {
         font-size: var(--fp-h5-regular);
       }
-      &__item {
-        margin-top: calc(var(--gutter) * 2);
-        margin-bottom: calc(var(--gutter) * 2);
-
-        @media only screen and (min-width : 1024px) {
-          margin: 0;
+      // contenedor de video
+      .card-widget {
+        &__element {
+          @media only screen and (min-width : 1024px) {
+            margin: 0;
+          }
         }
       }
-
-        &__video {
-          border: none;
-          border-radius: var(--border-radius);
-        }
-
     }
 
     .last-posts {
