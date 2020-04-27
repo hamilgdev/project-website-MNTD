@@ -51,8 +51,8 @@ export default class Home extends Component {
 
             <div className="card-widget__element highlight-video ratio-video">
               <iframe 
-                className="video"
-                src="https://www.youtube.com/embed/Imeq3GeRttw?controls=0" frameborder="0" 
+                title="videoHome"
+                src="https://www.youtube.com/embed/Imeq3GeRttw?controls=0" frameBorder="0" 
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
               >
               </iframe>
@@ -60,8 +60,8 @@ export default class Home extends Component {
 
             <div className="card-widget__element ratio-video">
               <iframe 
-                className="video"
-                src="https://www.youtube.com/embed/Imeq3GeRttw?controls=0" frameborder="0" 
+              title="videoHome"
+                src="https://www.youtube.com/embed/Imeq3GeRttw?controls=0" frameBorder="0" 
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
               >
               </iframe>
@@ -69,8 +69,8 @@ export default class Home extends Component {
 
             <div className="card-widget__element ratio-video">
               <iframe 
-                className="video"
-                src="https://www.youtube.com/embed/Imeq3GeRttw?controls=0" frameborder="0" 
+              title="videoHome"
+                src="https://www.youtube.com/embed/Imeq3GeRttw?controls=0" frameBorder="0" 
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
               >
               </iframe>
@@ -82,7 +82,7 @@ export default class Home extends Component {
 
             <h3 className="title last-posts__title l-outer-m">ultima publicación</h3>
             
-            <a className="post-link highlight-post" href="#">
+            <a className="post-link highlight-post" href="#" aria-label="posts">
               <article className="post-article last-post">
                 <h2 className="post-article__title">
                   Deploying Node.js microservices to ZEIT ▲ Now
@@ -98,7 +98,7 @@ export default class Home extends Component {
               </article>
             </a>
 
-            <a className="post-link" href="#">
+            <a className="post-link" href="#" aria-label="posts">
               <article className="post-article last-post">
                 <h2 className="post-article__title">
                   Deploying Node.js microservices to ZEIT ▲ Now
@@ -114,7 +114,7 @@ export default class Home extends Component {
               </article>
             </a>
 
-            <a className="post-link" href="#">
+            <a className="post-link" href="#" aria-label="posts">
               <article className="post-article last-post">
                 <h2 className="post-article__title">
                   Deploying Node.js microservices to ZEIT ▲ Now

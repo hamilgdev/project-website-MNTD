@@ -113,7 +113,7 @@ export default class Article extends Component {
             <p>
               This will ask for your email and will send you a Verification
               email, just by clicking on Verify will log you in the platform,
-              it's like magic 🔮!
+              it's like magic <span role="img" aria-label="icon-magic">🔮</span>!
             </p>
             <p className="code l-outer-m l-inner-p border-radius">
               $ now login
@@ -129,7 +129,7 @@ export default class Article extends Component {
               Now provides a list of examples, for our exercise we are going to
               use Node.js ⬢, but hey!, Now supports other languages and
               platforms too, just give it a try with the one you like the most
-              😉
+              <span role="img" aria-label="icon-guiño">😉</span>
             </p>
           </div>
 

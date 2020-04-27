@@ -22,8 +22,8 @@ class About extends Component {
             <Julian className="figure" />
           </figure>
           <p className="section-about__data">
-            Hello, my name is <span className="text-name">Julián Duque</span>, I'm from Medellín, Colombia 🇨🇴 but
-            currently living in St. Petersburg, FL (Tampa Bay, FL) 🇺🇸.
+            Hello, my name is <span className="text-name">Julián Duque</span>, I'm from Medellín, Colombia <span role="img" aria-label="country-co"> 🇨🇴 </span> but
+            currently living in St. Petersburg, FL (Tampa Bay, FL) <span role="img" aria-label="country-us"> 🇺🇸 </span>.
           </p>
 
         </div>
@@ -202,7 +202,7 @@ class About extends Component {
             teens from 13 to 17 years old in Medellín, Colombia.
           </p>
           <p className="section-about__description l-inner-p">
-            Fun fact: I love praying mantises and other type of critters! 💚💚💚
+            Fun fact: I love praying mantises and other type of critters! <span role="img" aria-label="heart"> 💚💚💚 </span>
           </p>
         </div>
       

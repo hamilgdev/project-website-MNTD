@@ -52,24 +52,24 @@ export default class Mndt extends Component {
             <div className="recent-video__content card-widget__content">
               <div className="recent-video__element card-widget__element ratio-video">
                 <iframe 
-                  className="video"
-                  src="https://www.youtube.com/embed/Imeq3GeRttw?controls=0" frameborder="0" 
+                  title="videoMNTD"
+                  src="https://www.youtube.com/embed/Imeq3GeRttw?controls=0" frameBorder="0" 
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                 >
                 </iframe>
               </div>
               <div className="recent-video__element card-widget__element ratio-video">
                 <iframe 
-                  className="video"
-                  src="https://www.youtube.com/embed/Imeq3GeRttw?controls=0" frameborder="0" 
+                title="videoMNTD"
+                  src="https://www.youtube.com/embed/Imeq3GeRttw?controls=0" frameBorder="0" 
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                 >
                 </iframe>
               </div>
               <div className="recent-video__element card-widget__element ratio-video">
                 <iframe 
-                  className="video"
-                  src="https://www.youtube.com/embed/Imeq3GeRttw?controls=0" frameborder="0" 
+                title="videoMNTD"
+                  src="https://www.youtube.com/embed/Imeq3GeRttw?controls=0" frameBorder="0" 
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                 >
                 </iframe>
@@ -92,8 +92,8 @@ export default class Mndt extends Component {
               <div className="more-video__content card-widget__content">
                 <div className="more-video__element card-widget__element ratio-video">
                   <iframe 
-                    className="video"
-                    src="https://www.youtube.com/embed/Imeq3GeRttw?controls=0" frameborder="0" 
+                  title="videoMNTD"
+                    src="https://www.youtube.com/embed/Imeq3GeRttw?controls=0" frameBorder="0" 
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                   >
                   </iframe>
@@ -113,8 +113,8 @@ export default class Mndt extends Component {
               <div className="more-video__content card-widget__content">
                 <div className="more-video__element card-widget__element ratio-video">
                   <iframe 
-                    className="video"
-                    src="https://www.youtube.com/embed/Imeq3GeRttw?controls=0" frameborder="0" 
+                  title="videoMNTD"
+                    src="https://www.youtube.com/embed/Imeq3GeRttw?controls=0" frameBorder="0" 
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                   >
                   </iframe>
@@ -134,8 +134,8 @@ export default class Mndt extends Component {
               <div className="more-video__content card-widget__content">
                 <div className="more-video__element card-widget__element ratio-video">
                   <iframe 
-                    className="video"
-                    src="https://www.youtube.com/embed/Imeq3GeRttw?controls=0" frameborder="0" 
+                  title="videoMNTD"
+                    src="https://www.youtube.com/embed/Imeq3GeRttw?controls=0" frameBorder="0" 
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                   >
                   </iframe>
@@ -155,8 +155,8 @@ export default class Mndt extends Component {
               <div className="more-video__content card-widget__content">
                 <div className="more-video__element card-widget__element ratio-video">
                   <iframe 
-                    className="video"
-                    src="https://www.youtube.com/embed/Imeq3GeRttw?controls=0" frameborder="0" 
+                  title="videoMNTD"
+                    src="https://www.youtube.com/embed/Imeq3GeRttw?controls=0" frameBorder="0" 
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                   >
                   </iframe>
@@ -176,8 +176,8 @@ export default class Mndt extends Component {
               <div className="more-video__content card-widget__content">
                 <div className="more-video__element card-widget__element ratio-video">
                   <iframe 
-                    className="video"
-                    src="https://www.youtube.com/embed/Imeq3GeRttw?controls=0" frameborder="0" 
+                  title="videoMNTD"
+                    src="https://www.youtube.com/embed/Imeq3GeRttw?controls=0" frameBorder="0" 
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                   >
                   </iframe>
