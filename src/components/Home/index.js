@@ -16,8 +16,9 @@ export default class Home extends Component {
             <span className="section-home__content-cta">heroku
               <a 
               className="btn btn-cta btn-visit" 
-              href="#"
+              href="https://www.heroku.com/"
               target="_blank"
+              rel="noopener noreferrer"
               >
                 visit</a>
             </span>
@@ -31,8 +32,9 @@ export default class Home extends Component {
             stay tuned for more live <span className="tag-nodejs">Node.js</span>
           </p>
           <a className="btn btn-twitch"
-             href="#"
+             href="https://www.twitch.tv/julianduque"
              target="_blank"
+             rel="noopener noreferrer"
           >go to twitch
           </a>
         </div>

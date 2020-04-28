@@ -100,17 +100,17 @@ class Menu extends React.Component {
         </ul>
       
         <div className="network-menu">
-          <a href="#" aria-label="icon-network-twitter" className="icon icon-network">
+          <a href="https://twitter.com/julian_duque" target="_blank" rel="noopener noreferrer" aria-label="icon-network-twitter" className="icon icon-network">
             <span className="icon-twitter">
               <IconTwitter />
             </span>
           </a>
-          <a href="#" aria-label="icon-network-twitch" className="icon icon-network">
+          <a href="https://www.twitch.tv/julianduque" target="_blank" rel="noopener noreferrer" aria-label="icon-network-twitch" className="icon icon-network">
             <span className="icon-twitter">
               <IconTwitch />
             </span>
           </a>
-          <a href="#" aria-label="icon-network-youtube" className="icon icon-network">
+          <a href="https://www.youtube.com/user/julianduquej" target="_blank" rel="noopener noreferrer" aria-label="icon-network-youtube" className="icon icon-network">
             <span className="icon-twitter">
               <IconYoutube />
             </span>
