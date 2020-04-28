@@ -22,7 +22,7 @@ const Layout = ({ children }) => (
       <>
         <SEO
           title="Julián Duque - Delevoper and Educator"
-          keywords={[`Julián Duque`, `Developer and educator`]}
+          keywords={[`Julián Duque`]}
         />
         <div className="app-layout">
           <NavBar />
