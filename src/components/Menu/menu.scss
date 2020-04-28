@@ -84,7 +84,7 @@
     cursor: pointer;
     transition: var(--transition);
     z-index: 200;
-
+    &:focus { outline-style: none; }
     &:hover { background-color: var(--c-pri-darker-100); }
     // dibujo del boton menú móvil
     .icon-bar,
