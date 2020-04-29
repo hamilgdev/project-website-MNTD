@@ -1,9 +1,8 @@
 import React from "react"
 import { Link } from 'gatsby'
 import Logo from "../../images/svg/logo.svg";
-import IconTwitter from "../../images/svg/icons/icon-twitter.svg";
-import IconTwitch from "../../images/svg/icons/icon-twitch.svg";
-import IconYoutube from "../../images/svg/icons/icon-youtube.svg";
+import { networks } from "../constants/networks";
+import Network from "./Network"
 
 import "./menu.scss"
 
@@ -39,11 +38,9 @@ class Menu extends React.Component {
     return (
       
     <aside className="aside" id="aside">
-
       <a href="/" aria-label="logo-mobile" className="logo logo-mobile">
         <Logo />
       </a>
-
       <nav className={`main-nav ${this.activeClass()}`}>
         <ul className="main-menu" id="main-menu">
 
@@ -98,26 +95,12 @@ class Menu extends React.Component {
             </Link>
           </li>
         </ul>
-      
         <div className="network-menu">
-          <a href="https://twitter.com/julian_duque" target="_blank" rel="noopener noreferrer" aria-label="icon-network-twitter" className="icon icon-network">
-            <span className="icon-twitter">
-              <IconTwitter />
-            </span>
-          </a>
-          <a href="https://www.twitch.tv/julianduque" target="_blank" rel="noopener noreferrer" aria-label="icon-network-twitch" className="icon icon-network">
-            <span className="icon-twitter">
-              <IconTwitch />
-            </span>
-          </a>
-          <a href="https://www.youtube.com/user/julianduquej" target="_blank" rel="noopener noreferrer" aria-label="icon-network-youtube" className="icon icon-network">
-            <span className="icon-twitter">
-              <IconYoutube />
-            </span>
-          </a>
+          <Network {...networks.twitter} />
+          <Network {...networks.twitch} />
+          <Network {...networks.youtube} />
         </div>
       </nav>
-    
       <button
         className="btn-menu"
         id="btn-menu"
@@ -127,7 +110,6 @@ class Menu extends React.Component {
         <span className={`icon-bar ${this.animateClass()}`}>
         </span>
       </button>
-
     </aside>
     )
   }
