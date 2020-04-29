@@ -1,13 +1,8 @@
 import React, { Component } from "react";
-
 import Julian from "../images/julian";
 import Logo from "../images/logo_mntd";
-import IconTwitch from "../../images/svg/icons/icon-twitch.svg";
-import IconTwitter from "../../images/svg/icons/icon-twitter.svg";
-import IconGithub from "../../images/svg/icons/icon-github.svg";
-import IconLinkedin from "../../images/svg/icons/icon-linkedin.svg";
-import IconYoutube from "../../images/svg/icons/icon-youtube.svg";
-import IconEmail from "../../images/svg/icons/icon-email.svg";
+import { networks } from "../constants/networks";
+import Network from "./Network"
 
 import "./about.scss";
 
@@ -29,90 +24,21 @@ class About extends Component {
         </div>
 
         <div className="section-about__networks">
-
           <figure className="logo section-about__logo l-inner-px32">
             <Logo />
           </figure>
-
           <p className="section-about__hashtag">#EStreamerCoders</p>
-
           <div className="section-contact l-inner-px32">
-
             <h3 className="section-contact__title">contact me</h3>
-
             <div className="section-contact__networks">
-
-              <div className="content-network">
-                <span className="icon icon-network icon-twitter">
-                  <IconTwitter />
-                </span>
-                <a  className="nickname-network"
-                    href="https://twitter.com/julian_duque"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  > @julian_duque
-                </a>
-              </div>
-              <div className="content-network">
-                <span className="icon icon-network icon-github">
-                  <IconGithub />
-                </span>
-                <a  className="nickname-network"
-                    href="https://github.com/julianduque"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  > @julianduque
-                </a>
-              </div>
-              <div className="content-network">
-                <span className="icon icon-network icon-linkedin">
-                  <IconLinkedin />
-                </span>
-                <a  className="nickname-network"
-                    href="https://www.linkedin.com/in/juliandavidduque"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  > Julián David Duque
-                </a>
-              </div>
-              <div className="content-network">
-                <span className="icon icon-network icon-twitch">
-                  <IconTwitch />
-                </span>
-                <a  className="nickname-network"
-                    href="https://www.twitch.tv/julianduque"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  > julianduque
-                </a>
-              </div>
-              <div className="content-network">
-                <span className="icon icon-network icon-youtube">
-                  <IconYoutube />
-                </span>
-                <a  className="nickname-network"
-                    href="https://www.youtube.com/user/julianduquej"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  > julianduquej
-                </a>
-              </div>
-              <div className="content-network">
-                <span className="icon icon-network icon-email">
-                  <IconEmail />
-                </span>
-                <a  className="nickname-network"
-                    href="mailto:hola@julianduque.co"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  > hola@julianduque.co
-                </a> 
-              </div>
-
+              <Network {...networks.twitter} />
+              <Network {...networks.github} />
+              <Network {...networks.linkedin} />
+              <Network {...networks.twitch} />
+              <Network {...networks.youtube} />
+              <Network {...networks.email} />
             </div>
-
           </div>
-          
         </div>
 
         <div className="section-about__information">
