@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
 
-import IconRead from "../../images/svg/icons/icon-read.svg";
-import IconRowLeft from "../../images/svg/icons/icon-rowleft.svg";
+import IconRead from "../../assets/svg/icons/icon-read.svg";
+import IconRowLeft from "../../assets/svg/icons/icon-rowleft.svg";
 
 
 import "./blog.scss";

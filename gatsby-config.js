@@ -12,7 +12,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`
+        path: `${__dirname}/src/assets/img/`
       }
     },
     `gatsby-transformer-sharp`,
@@ -26,7 +26,7 @@ module.exports = {
         background_color: `#2E6B41`,
         theme_color: `#2E6B41`,
         display: `minimal-ui`,
-        icon: `src/images/Logotipo_mntd.png` // This path is relative to the root of the site.
+        icon: `src/assets/img/logo_mntd.png` // This path is relative to the root of the site.
       }
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
@@ -37,7 +37,7 @@ module.exports = {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-          include: `${__dirname}/src/images/svg`
+          include: `${__dirname}/src/assets/svg/`
         }
       }
     }

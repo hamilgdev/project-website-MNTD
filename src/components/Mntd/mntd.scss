@@ -52,6 +52,31 @@
   }
   &__content {
     padding: var(--gutter);
+
+    .recent-video {
+
+      &__element {
+        padding-left: var(--gutter);
+        padding-right: var(--gutter);
+      }
+
+      &__banner-video {
+        position: relative;
+      }
+
+      &__title-video {
+        display: none;
+      }
+
+      &__icon-play {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        fill: var(--c-sec-darker-200);
+      }
+    }
+
     .more-video {
       margin-top: calc(var(--gutter) * 4);
       margin-bottom: calc(var(--gutter) * 4);
@@ -59,14 +84,15 @@
         padding-top: 0;
         padding-bottom: 0;
       }
-      &__description { display: block; }
-      &__element,
+      &__card-video { display: block; }
+
+      &__banner-video,
       &__information { 
         @media only screen and (max-width : 1023px){
           display: none;
         }
       }
-      &__title {
+      &__title-video {
         font-family: var(--f-primary);
         font-size: var(--ft-normal);
         color: var(--c-thi-main);
@@ -115,18 +141,49 @@
         grid-area: moreVideo;
         margin-top: calc(var(--gutter) * 2);
         align-self: center;
-        &__content {
+        
+        &__content-videos {
+          padding: var(--gutter);
+        }
+
+        &__card-video { 
           display: grid;
           grid-template-columns: 1fr 1fr;
           grid-template-rows: 1fr;
+          padding: initial;
+          align-items: center;
+          background-color: initial;
+          padding-bottom: var(--gutter);
+          border-bottom: 1px solid var(--c-fou-main);
+          border-radius: initial;
+          transition: var(--transition);
+          &:hover {
+            border-color: var(--c-sec-lighter-200);
+          }
         }
-          &__title {
-            font-size: var(--fp-smaller);
-          }
 
-          &__information {
-            font-size: var(--fp-ultrasmaller);
+        &__banner-video { position: relative; }
+
+          &__icon-play {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            fill: var(--c-sec-darker-200);
           }
+        
+          &__data-video {
+            padding: var(--gutter);
+          }
+        
+            &__title-video {
+              font-size: var(--fp-smaller);
+              margin-bottom: calc(var(--gutter) / 2)
+            }
+
+            &__information {
+              font-size: var(--fp-ultrasmaller);
+            }
       }
     }
   }

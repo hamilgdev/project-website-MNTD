@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./talks.scss";
 
-import IconEye from "../../images/svg/icons/icon-eye.svg";
+import IconEye from "../../assets/svg/icons/icon-eye.svg";
 
 export default class Talks extends Component {
   render() {

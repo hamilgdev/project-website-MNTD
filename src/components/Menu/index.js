@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from 'gatsby'
-import Logo from "../../images/svg/logo.svg";
+import Logo from "../../assets/svg/logo.svg";
 import { networks } from "../constants/networks";
 import Network from "./Network"
 

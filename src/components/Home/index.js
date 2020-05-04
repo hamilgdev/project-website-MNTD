@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import IconRead from "../../images/svg/icons/icon-read.svg";
+import IconRead from "../../assets/svg/icons/icon-read.svg";
 
 import "./home.scss";
 

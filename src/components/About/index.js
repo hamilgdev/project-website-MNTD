@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Julian from "../images/julian";
+import Julian from "../images/julian_profile";
 import Logo from "../images/logo_mntd";
 import { networks } from "../constants/networks";
 import Network from "./Network"
