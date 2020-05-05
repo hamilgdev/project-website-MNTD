@@ -2,14 +2,11 @@ import React from "react";
 
 import LogoMNTD from "../../assets/svg/logotipo_banner.svg";
 import DecorativeFrost from "../../assets/svg/decorative_frost.svg";
-// import IconPlay from "../../images/svg/icons/icon-play.svg";
 // import mini components
-import CardListVideo from '../mini_components/cards/card-list-video/index';
-import BannerVideo from '../mini_components/banner-video/index';
+import CardListVideo from '../utils/cards/card-list-video/index';
+import CardVideo from '../utils/cards/card-video/index';
 
 import { seasons } from "../constants/seasons";
-// import RecentVideo from "./recent_video";
-
 
 import "./mntd.scss";
 
@@ -42,7 +39,7 @@ class Mndt extends React.Component {
 
         <div className="section-mntd__list l-inner-p">
 
-            <select 
+            {/* <select 
               name="season-list"
               className="season-list" 
               value={this.state.value} 
@@ -60,48 +57,84 @@ class Mndt extends React.Component {
               >
                 Node.js En Vivo - Temporada 2
               </option>
-            </select>
+            </select> */}
 
         </div>
 
         <div className="section-mntd__content">
         
           <CardListVideo
-            name="recent-video"
+            name="recent-videos"
             title="videos más recientes"
             subtitle="temporada 2"
-            elements= {
-              <BannerVideo 
-                name="card-widget__element"
-                title={seasons.season01.episode01.title}
-                banner={seasons.season01.banner}
-              />
+            elements={
+              <React.Fragment>
+                <CardVideo 
+                  nameList="recent-video"
+                  url="#"
+                  banner={seasons.season01.episode01.banner()}
+                  title={seasons.season01.episode01.title}
+                />
+                <CardVideo 
+                  nameList="recent-video"
+                  url="#"
+                  banner={seasons.season01.episode01.banner()}
+                  title={seasons.season01.episode01.title}
+                />
+                <CardVideo 
+                  nameList="recent-video"
+                  url="#"
+                  banner={seasons.season01.episode01.banner()}
+                  title={seasons.season01.episode01.title}
+                />
+              </React.Fragment>
             }
           />
 
           <CardListVideo
-            name="more-video"
+            name="more-videos"
             title="más videos"
             subtitle="temporada 2"
             elements={
-              <div className="more-video__content card-widget__content">
-                <a 
-                  className="more-video__card-video card-widget__description"
-                  href="#"
-                >
-                  <div className="more-video__banner-video">
-                    {/* {seasons.season01.episode01.banner()} */}
-                    {/* <span className="icon recent-video__icon-play"><IconPlay /></span> */}
-                  </div>
-                  <div className="more-video__data-video">
-                    <h3 className="more-video__title-video">{seasons.season01.episode01.title}</h3>
-                    <p className="more-video__information">{seasons.season01.episode01.description}</p>
-                  </div>
-                </a>
-              </div>
+              <React.Fragment>
+                <CardVideo 
+                  nameList="more-video"
+                  url="#"
+                  banner={seasons.season01.episode01.banner()}
+                  title={seasons.season01.episode01.title}
+                  description={seasons.season01.episode01.description}
+                />
+                <CardVideo 
+                  nameList="more-video"
+                  url="#"
+                  banner={seasons.season01.episode01.banner()}
+                  title={seasons.season01.episode01.title}
+                  description={seasons.season01.episode01.description}
+                />
+                <CardVideo 
+                  nameList="more-video"
+                  url="#"
+                  banner={seasons.season01.episode01.banner()}
+                  title={seasons.season01.episode01.title}
+                  description={seasons.season01.episode01.description}
+                />
+                <CardVideo 
+                  nameList="more-video"
+                  url="#"
+                  banner={seasons.season01.episode01.banner()}
+                  title={seasons.season01.episode01.title}
+                  description={seasons.season01.episode01.description}
+                />
+                <CardVideo 
+                  nameList="more-video"
+                  url="#"
+                  banner={seasons.season01.episode01.banner()}
+                  title={seasons.season01.episode01.title}
+                  description={seasons.season01.episode01.description}
+                />
+              </React.Fragment>
             }
           />
-
         </div>
       </section>
     );
