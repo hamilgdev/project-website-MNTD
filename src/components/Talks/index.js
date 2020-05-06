@@ -2,10 +2,10 @@ import React from 'react';
 
 // import mini components
 import Button from '../utils/button/index';
+import CardListVideo from '../utils/cards/card-list-video/index';
+import ItemVideo from '../utils/item-video/index';
 
 import "./talks.scss";
-
-import IconEye from "../../assets/svg/icons/icon-eye.svg";
 
 class Talks extends React.Component {
   render() {
@@ -16,6 +16,7 @@ class Talks extends React.Component {
 
           <div className="current-talk__video ratio-video">
             <iframe 
+              title="video youtube"
               className="video"
               src="https://www.youtube.com/embed/Imeq3GeRttw?controls=0" frameborder="0" 
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
@@ -44,60 +45,24 @@ One common issue I have found working on the field with customers adopting Node.
                 />
               </div>
             </div>
-      
           </div>
-
         </div>
 
-        <div className="content-list card-widget">
-
-          <div className="content-list__data card-widget__data">
-            <h3 className="content-list__title card-widget__title">more talks</h3>
-          </div>
-
-          <hr className="separator separator-talks" />
-
-          <div className="content-list__elements card-widget__content">
-            <a className="content-list__description card-widget__description" href="#">
-              <span className="content-list__icon icon-eye">
-                <IconEye />
-              </span> 
-              Let it crash! - Julián Duque
-            </a>
-            <a className="content-list__description card-widget__description" href="#">
-              <span className="content-list__icon icon-eye">
-                <IconEye />
-              </span> 
-              Let it crash! - Julián Duque
-            </a>
-            <a className="content-list__description card-widget__description" href="#">
-              <span className="content-list__icon icon-eye">
-                <IconEye />
-              </span> 
-              Let it crash! - Julián Duque
-            </a>
-            <a className="content-list__description card-widget__description" href="#">
-              <span className="content-list__icon icon-eye">
-                <IconEye />
-              </span> 
-              Let it crash! - Julián Duque
-            </a>
-            <a className="content-list__description card-widget__description" href="#">
-              <span className="content-list__icon icon-eye">
-                <IconEye />
-              </span> 
-              Let it crash! - Julián Duque
-            </a>
-            <a className="content-list__description card-widget__description" href="#">
-              <span className="content-list__icon icon-eye">
-                <IconEye />
-              </span> 
-              Let it crash! - Julián Duque
-            </a>
-          </div>
-
-        </div>
-
+        <CardListVideo 
+          name="talk-videos"
+          titleList="mis charlas"
+          subtitle=""
+          elements={
+            <React.Fragment>
+              <ItemVideo titleItem="Let it crash! - Julián Duque" />
+              <ItemVideo titleItem="Let it crash! - Julián Duque" />
+              <ItemVideo titleItem="Let it crash! - Julián Duque" />
+              <ItemVideo titleItem="Let it crash! - Julián Duque" />
+              <ItemVideo titleItem="Let it crash! - Julián Duque" />
+            </React.Fragment>
+          }
+        />
+        
       </section>
     );
   }

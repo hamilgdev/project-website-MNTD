@@ -65,7 +65,7 @@ class Mndt extends React.Component {
         
           <CardListVideo
             name="recent-videos"
-            title="videos más recientes"
+            titleList="videos más recientes"
             subtitle="temporada 2"
             elements={
               <React.Fragment>
@@ -93,7 +93,7 @@ class Mndt extends React.Component {
 
           <CardListVideo
             name="more-videos"
-            title="más videos"
+            titleList="más videos"
             subtitle="temporada 2"
             elements={
               <React.Fragment>
