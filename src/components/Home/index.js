@@ -1,10 +1,13 @@
-import React, { Component } from "react";
+import React from "react";
 
-import IconRead from "../../assets/svg/icons/icon-read.svg";
+// import mini components
+import IconRead from '../../assets/svg/icons/icon-read.svg';
+import CardVideo from '../utils/cards/card-video/index';
+import { seasons } from "../constants/seasons";
 
 import "./home.scss";
 
-export default class Home extends Component {
+class Home extends React.Component {
   render() {
     return (
       <section className="section-home" id="/">
@@ -51,40 +54,64 @@ export default class Home extends Component {
               videos más recientes
             </h3>
 
-            <div className="card-widget__element highlight-video ratio-video">
-              <iframe 
-                title="videoHome"
-                src="https://www.youtube.com/embed/Imeq3GeRttw?controls=0" frameBorder="0" 
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-              >
-              </iframe>
-            </div>
-
-            <div className="card-widget__element ratio-video">
-              <iframe 
-              title="videoHome"
-                src="https://www.youtube.com/embed/Imeq3GeRttw?controls=0" frameBorder="0" 
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-              >
-              </iframe>
-            </div>
-
-            <div className="card-widget__element ratio-video">
-              <iframe 
-              title="videoHome"
-                src="https://www.youtube.com/embed/Imeq3GeRttw?controls=0" frameBorder="0" 
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-              >
-              </iframe>
-            </div>
+            <CardVideo 
+              nameList="recent-video"
+              url="#"
+              banner={seasons.season01.episode01.banner()}
+              title={seasons.season01.episode01.title}
+            />
+            <CardVideo 
+              nameList="recent-video"
+              url="#"
+              banner={seasons.season01.episode01.banner()}
+              title={seasons.season01.episode01.title}
+            />
+            <CardVideo 
+              nameList="recent-video"
+              url="#"
+              banner={seasons.season01.episode01.banner()}
+              title={seasons.season01.episode01.title}
+            />
 
           </div>
 
-          <div className="last-posts l-outer-mx32">
+          <div className="recent-posts l-outer-mx32">
 
-            <h3 className="title last-posts__title l-outer-m">ultima publicación</h3>
+            <h3 className="title recent-posts__title l-outer-m">publicaciones recientes</h3>
             
-            <a className="post-link highlight-post" href="#" aria-label="posts">
+            <a className="post-link" href="#" aria-label="posts">
+              <article className="post-article last-post">
+                <h2 className="post-article__title">
+                  Deploying Node.js microservices to ZEIT ▲ Now
+                </h2>
+                <p className="post-article__description">
+                  ZEIT Now is a cloud platform to deploy serverless applications, one of the things I like the most about Now...
+                </p>
+                <div className="icon icon-blog">
+                  <span className="icon-read">
+                    <IconRead />
+                  </span>
+                </div>
+              </article>
+            </a>
+
+            <a className="post-link" href="#" aria-label="posts">
+              <article className="post-article last-post">
+                <h2 className="post-article__title">
+                  Deploying Node.js microservices to ZEIT ▲ Now
+                </h2>
+                <p className="post-article__description">
+                  ZEIT Now is a cloud platform to deploy serverless applications, one of the things I like the most about Now...
+                </p>
+                <div className="icon icon-blog">
+                  <span className="icon-read">
+                    <IconRead />
+                  </span>
+                </div>
+              </article>
+            </a>
+
+            <a className="post-link" href="#" aria-label="posts">
               <article className="post-article last-post">
                 <h2 className="post-article__title">
                   Deploying Node.js microservices to ZEIT ▲ Now
@@ -100,39 +127,7 @@ export default class Home extends Component {
               </article>
             </a>
 
-            <a className="post-link" href="#" aria-label="posts">
-              <article className="post-article last-post">
-                <h2 className="post-article__title">
-                  Deploying Node.js microservices to ZEIT ▲ Now
-                </h2>
-                <p className="post-article__description">
-                  ZEIT Now is a cloud platform to deploy serverless applications, one of the things I like the most about Now...
-                </p>
-                <div className="icon icon-blog">
-                  <span className="icon-read">
-                    <IconRead />
-                  </span>
-                </div>
-              </article>
-            </a>
-
-            <a className="post-link" href="#" aria-label="posts">
-              <article className="post-article last-post">
-                <h2 className="post-article__title">
-                  Deploying Node.js microservices to ZEIT ▲ Now
-                </h2>
-                <p className="post-article__description">
-                  ZEIT Now is a cloud platform to deploy serverless applications, one of the things I like the most about Now...
-                </p>
-                <div className="icon icon-blog">
-                  <span className="icon-read">
-                    <IconRead />
-                  </span>
-                </div>
-              </article>
-            </a>
-
-          </div>
+            </div>
 
         </div>
 
@@ -140,3 +135,5 @@ export default class Home extends Component {
     );
   }
 }
+
+export default Home;
