@@ -1,8 +1,3 @@
-.icon {
-  display: inline-block;
-  width: 38px;
-  height: 38px;
-}
 // estilo iconos redes sociales - Page About
 .icon-network {
   border-radius: 50%;
@@ -10,4 +5,22 @@
   transition: var(--transition);
   
   &:hover { background-color: var(--c-sec-darker-100); }
+}
+
+.content-network {
+  display: flex;
+  align-items: center;
+  margin: var(--gutter) 0;
+  @media only screen and (min-width : 1024px){
+    margin: 8px 0;          
+  }
+  .nickname-network {
+     padding-left: var(--gutter);
+     font-family: var(--f-secondary);
+     color: var(--c-acc-main);
+     transition: var(--transition);
+     &:hover {
+      color: var(--c-sec-lighter-200);
+     }
+  }
 }

@@ -14,7 +14,8 @@ class CardVideo extends React.Component {
   }
  
   render(){
-    if(this.props.nameList==="recent-video"){
+    const nameList = this.props.nameList
+    if(nameList==="recent-video"){
       return(
         <a
           href="#"
@@ -32,7 +33,7 @@ class CardVideo extends React.Component {
           </div>
         </a>
       );
-    }else if(this.props.nameList==="more-video"){
+    }else if(nameList==="more-video"){
       return(
         <a 
           href={this.props.url}

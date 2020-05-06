@@ -18,7 +18,7 @@ export const networks = {
   twitter: {
     title: 'Twitter',
     nickname: '@julian_duque',
-    arial_label: 'Network-Twitter',
+    arialLabel: 'Network-Twitter',
     url: 'https://twitter.com/julian_duque',
     icon:  iconTwitter()
   },

@@ -71,24 +71,6 @@
     &__networks {
       margin-left: calc(var(--gutter) * 2);
     }
-
-      .content-network {
-        display: flex;
-        align-items: center;
-        margin: var(--gutter) 0;
-        @media only screen and (min-width : 1024px){
-          margin: 8px 0;          
-        }
-        .nickname-network {
-           padding-left: var(--gutter);
-           font-family: var(--f-secondary);
-           color: var(--c-acc-main);
-           transition: var(--transition);
-           &:hover {
-            color: var(--c-sec-lighter-200);
-           }
-        }
-      }
   }
 
   &__information {
