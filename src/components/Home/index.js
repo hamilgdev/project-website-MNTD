@@ -1,8 +1,9 @@
-import React from "react";
+import React from 'react';
 
 // import mini components
 import IconRead from '../../assets/svg/icons/icon-read.svg';
 import CardVideo from '../utils/cards/card-video/index';
+import Button from '../utils/button/index';
 import { seasons } from "../constants/seasons";
 
 import "./home.scss";
@@ -17,13 +18,12 @@ class Home extends React.Component {
           <h1 className="title section-home__title l-inner-p l-inner-mx32">
             developer advocate at
             <span className="section-home__content-cta">heroku
-              <a 
-              className="btn btn-cta btn-visit" 
-              href="https://www.heroku.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >
-                visit</a>
+              <Button 
+                name="btn-cta"
+                href="https://www.heroku.com/"
+                target="_blank"
+                texto="visit"
+              />
             </span>
           </h1>
 
@@ -34,12 +34,12 @@ class Home extends React.Component {
           <p className="section-home__description l-inner-p">
             stay tuned for more live <span className="tag-nodejs">Node.js</span>
           </p>
-          <a className="btn btn-twitch"
-             href="https://www.twitch.tv/julianduque"
-             target="_blank"
-             rel="noopener noreferrer"
-          >go to twitch
-          </a>
+          <Button 
+            name="btn-twitch"
+            href="https://www.twitch.tv/julianduque"
+            target="_blank"
+            texto="go to twitch"
+          />
         </div>
 
         <div className="content-recommended recommended l-inner-p">

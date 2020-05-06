@@ -1,9 +1,13 @@
-import React, { Component } from "react";
+import React from 'react';
+
+// import mini components
+import Button from '../utils/button/index';
+
 import "./talks.scss";
 
 import IconEye from "../../assets/svg/icons/icon-eye.svg";
 
-export default class Talks extends Component {
+class Talks extends React.Component {
   render() {
     return (
       <section className="section-talks" id="talks">
@@ -30,18 +34,14 @@ One common issue I have found working on the field with customers adopting Node.
             <div className="current-talk__resources">
               <h3 className="current-talk__subtitle card-widget__subtitle">recursos</h3>
               <div className="current-talk__btns">
-                <a 
-                className="btn btn-slide" 
-                href="#"
-                target="_blank"
-                >
-                  see slide</a>
-                <a 
-                className="btn btn-download" 
-                href="#"
-                target="_blank"
-                >
-                  download</a>
+                <Button 
+                  name="btn-slide"
+                  texto="see slide"
+                />
+                <Button 
+                  name="btn-download"
+                  texto="download"
+                />
               </div>
             </div>
       
@@ -102,3 +102,5 @@ One common issue I have found working on the field with customers adopting Node.
     );
   }
 }
+
+export default Talks;
