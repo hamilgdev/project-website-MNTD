@@ -23,8 +23,8 @@ module.exports = {
         name: `Julián Duque - Delevoper and Educator`,
         short_name: `Julián Duque`,
         start_url: `/`,
-        background_color: `#2E6B41`,
-        theme_color: `#2E6B41`,
+        background_color: `#310049`,
+        theme_color: `#310049`,
         display: `minimal-ui`,
         icon: `src/assets/img/logo_mntd.png` // This path is relative to the root of the site.
       }
