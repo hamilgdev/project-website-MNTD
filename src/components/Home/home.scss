@@ -76,25 +76,12 @@
       }
     }
     
-    .recent-videos {
-      &__title { font-size: var(--fp-h5-regular); }
+    .recent-videos__content {
+      .recent-videos-title { font-size: var(--fp-h5-regular); }
     }
 
-    .recent-posts {
-      
-      &__title {
-        font-size: var(--fp-h5-regular);
-      }
-
-      .post-link {
-        margin-top: calc(var(--gutter) * 2);
-        margin-bottom: calc(var(--gutter) * 2);
-
-        @media only screen and (min-width : 1024px) {
-          margin: 0;
-        }
-      }
-
+    .recent-posts__content {
+      .recent-posts-title { font-size: var(--fp-h5-regular); }
     }
 
   }
@@ -127,7 +114,6 @@
     &__description {
       font-size: var(--fp-h4-normal);
     }
-
 
   }
 
@@ -169,8 +155,8 @@
         font-size: var(--fp-h2-subtitle);
       }
 
-      .recent-videos,
-      .recent-posts {
+      .recent-videos__content,
+      .recent-posts__content {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 42px auto auto;
@@ -178,13 +164,13 @@
         margin: calc(var(--gutter) * 2) 0;
       }
 
-      .recent-videos {
+      .recent-videos__content {
         grid-area: recentVideos;
         grid-template-areas: 'titleRecent titleRecent'
                              'highlightVideo highlightVideo'
                              'leftVideo rightVideo';
 
-        &__title { 
+        .recent-videos-title { 
           grid-area: titleRecent; 
           font-size: var(--fp-h4-normal);
           margin: 0;
@@ -221,23 +207,31 @@
         } 
       }
 
-      .recent-posts {
+      .recent-posts__content {
         grid-area: lastPosts;
         grid-template-areas: 'titleLast titleLast'
                              'leftPost rightPost'
                              'highlightPost highlightPost';
 
-        &__title { 
+        .recent-posts-title  { 
           grid-area: titleLast; 
           font-size: var(--fp-h4-normal);
           margin: 0;
         }
 
+        .input-post { 
+          .last-post {
+            .post-article__title { font-size: var(--fp-smaller);
+            }
+            .post-article__description { font-size: var(--fs-smaller); }
+          }
+        }
+
         > a:nth-last-child(1) { 
           grid-area: highlightPost; 
           .post-article {
-            &__title { font-size: var(--fp-h5-regular); }
-            &__description { font-size: var(--fs-small); }
+            &__title { font-size: var(--fp-h5-regular) !important; }
+            &__description { font-size: var(--fs-small) !important; }
           }
         }
 

@@ -1,7 +1,7 @@
 import React from 'react';
 
 // import mini components
-import IconRead from '../../assets/svg/icons/icon-read.svg';
+import CardPost from '../utils/cards/card-post/index';
 import CardVideo from '../utils/cards/card-video/index';
 import Button from '../utils/button/index';
 import { seasons } from "../constants/seasons";
@@ -48,9 +48,9 @@ class Home extends React.Component {
             mis recomendados
           </h2>
 
-          <div className="recent-videos l-outer-mx32">
+          <div className="recent-videos__content l-outer-mx32">
 
-            <h3 className="title recent-videos__title l-outer-m">
+            <h3 className="title recent-videos-title l-outer-m">
               videos más recientes
             </h3>
 
@@ -75,59 +75,33 @@ class Home extends React.Component {
 
           </div>
 
-          <div className="recent-posts l-outer-mx32">
+          <div className="recent-posts__content l-outer-mx32">
 
-            <h3 className="title recent-posts__title l-outer-m">publicaciones recientes</h3>
+            <h3 className="title recent-posts-title l-outer-m">publicaciones recientes</h3>
             
-            <a className="post-link" href="#" aria-label="posts">
-              <article className="post-article last-post">
-                <h2 className="post-article__title">
-                  Deploying Node.js microservices to ZEIT ▲ Now
-                </h2>
-                <p className="post-article__description">
-                  ZEIT Now is a cloud platform to deploy serverless applications, one of the things I like the most about Now...
-                </p>
-                <div className="icon icon-blog">
-                  <span className="icon-read">
-                    <IconRead />
-                  </span>
-                </div>
-              </article>
-            </a>
+            <CardPost 
+              nameList="input-post"
+              url="#"
+              namePost="last-post"
+              title="Deploying Node.js microservices to ZEIT ▲ Now"
+              description="ZEIT Now is a cloud platform to deploy serverless applications, one of the things I like the most about Now..."
+            />
+            <CardPost 
+              nameList="input-post"
+              url="#"
+              namePost="last-post"
+              title="Deploying Node.js microservices to ZEIT ▲ Now"
+              description="ZEIT Now is a cloud platform to deploy serverless applications, one of the things I like the most about Now..."
+            />
+            <CardPost 
+              nameList="input-post"
+              url="#"
+              namePost="last-post"
+              title="Deploying Node.js microservices to ZEIT ▲ Now"
+              description="ZEIT Now is a cloud platform to deploy serverless applications, one of the things I like the most about Now is their DX (Developer Experience), it makes it very pleasant to deploy microservices to the cloud..."
+            />
 
-            <a className="post-link" href="#" aria-label="posts">
-              <article className="post-article last-post">
-                <h2 className="post-article__title">
-                  Deploying Node.js microservices to ZEIT ▲ Now
-                </h2>
-                <p className="post-article__description">
-                  ZEIT Now is a cloud platform to deploy serverless applications, one of the things I like the most about Now...
-                </p>
-                <div className="icon icon-blog">
-                  <span className="icon-read">
-                    <IconRead />
-                  </span>
-                </div>
-              </article>
-            </a>
-
-            <a className="post-link" href="#" aria-label="posts">
-              <article className="post-article last-post">
-                <h2 className="post-article__title">
-                  Deploying Node.js microservices to ZEIT ▲ Now
-                </h2>
-                <p className="post-article__description">
-                  ZEIT Now is a cloud platform to deploy serverless applications, one of the things I like the most about Now is their DX (Developer Experience), it makes it very pleasant to deploy microservices to the cloud...
-                </p>
-                <div className="icon icon-blog">
-                  <span className="icon-read">
-                    <IconRead />
-                  </span>
-                </div>
-              </article>
-            </a>
-
-            </div>
+          </div>
 
         </div>
 

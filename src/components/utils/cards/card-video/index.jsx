@@ -18,7 +18,7 @@ class CardVideo extends React.Component {
     if(nameList==="recent-video"){
       return(
         <a
-          href="#"
+          href={this.props.url}
           rel="noopener noreferrer"
           className={`${this.props.nameList}`}
         >

@@ -1,0 +1,11 @@
+.card-post {
+  background-color: var(--c-acc-main);
+  padding: var(--gutter);
+  border-radius: var(--border-radius);
+  &__title { 
+    margin: 0;
+    padding: calc(var(--gutter) / 2) 0;
+    font-size: var(--fp-h6-small); 
+  }
+  &__elements { padding-left: calc(var(--gutter) / 2) }
+}
