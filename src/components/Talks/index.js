@@ -1,9 +1,13 @@
-import React, { Component } from "react";
+import React from 'react';
+
+// import mini components
+import Button from '../utils/button/index';
+import CardListVideo from '../utils/cards/card-list-video/index';
+import ItemVideo from '../utils/item-video/index';
+
 import "./talks.scss";
 
-import IconEye from "../../images/svg/icons/icon-eye.svg";
-
-export default class Talks extends Component {
+class Talks extends React.Component {
   render() {
     return (
       <section className="section-talks" id="talks">
@@ -12,6 +16,7 @@ export default class Talks extends Component {
 
           <div className="current-talk__video ratio-video">
             <iframe 
+              title="video youtube"
               className="video"
               src="https://www.youtube.com/embed/Imeq3GeRttw?controls=0" frameborder="0" 
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
@@ -30,75 +35,37 @@ One common issue I have found working on the field with customers adopting Node.
             <div className="current-talk__resources">
               <h3 className="current-talk__subtitle card-widget__subtitle">recursos</h3>
               <div className="current-talk__btns">
-                <a 
-                className="btn btn-slide" 
-                href="#"
-                target="_blank"
-                >
-                  see slide</a>
-                <a 
-                className="btn btn-download" 
-                href="#"
-                target="_blank"
-                >
-                  download</a>
+                <Button 
+                  name="btn-slide"
+                  texto="see slide"
+                />
+                <Button 
+                  name="btn-download"
+                  texto="download"
+                />
               </div>
             </div>
-      
           </div>
-
         </div>
 
-        <div className="content-list card-widget">
-
-          <div className="content-list__data card-widget__data">
-            <h3 className="content-list__title card-widget__title">more talks</h3>
-          </div>
-
-          <hr className="separator separator-talks" />
-
-          <div className="content-list__elements card-widget__content">
-            <a className="content-list__description card-widget__description" href="#">
-              <span className="content-list__icon icon-eye">
-                <IconEye />
-              </span> 
-              Let it crash! - Julián Duque
-            </a>
-            <a className="content-list__description card-widget__description" href="#">
-              <span className="content-list__icon icon-eye">
-                <IconEye />
-              </span> 
-              Let it crash! - Julián Duque
-            </a>
-            <a className="content-list__description card-widget__description" href="#">
-              <span className="content-list__icon icon-eye">
-                <IconEye />
-              </span> 
-              Let it crash! - Julián Duque
-            </a>
-            <a className="content-list__description card-widget__description" href="#">
-              <span className="content-list__icon icon-eye">
-                <IconEye />
-              </span> 
-              Let it crash! - Julián Duque
-            </a>
-            <a className="content-list__description card-widget__description" href="#">
-              <span className="content-list__icon icon-eye">
-                <IconEye />
-              </span> 
-              Let it crash! - Julián Duque
-            </a>
-            <a className="content-list__description card-widget__description" href="#">
-              <span className="content-list__icon icon-eye">
-                <IconEye />
-              </span> 
-              Let it crash! - Julián Duque
-            </a>
-          </div>
-
-        </div>
-
+        <CardListVideo 
+          name="talk-videos"
+          titleList="mis charlas"
+          subtitle=""
+          elements={
+            <React.Fragment>
+              <ItemVideo titleItem="Let it crash! - Julián Duque" />
+              <ItemVideo titleItem="Let it crash! - Julián Duque" />
+              <ItemVideo titleItem="Let it crash! - Julián Duque" />
+              <ItemVideo titleItem="Let it crash! - Julián Duque" />
+              <ItemVideo titleItem="Let it crash! - Julián Duque" />
+            </React.Fragment>
+          }
+        />
+        
       </section>
     );
   }
 }
+
+export default Talks;

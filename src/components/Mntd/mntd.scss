@@ -52,25 +52,10 @@
   }
   &__content {
     padding: var(--gutter);
-    .more-video {
+
+    .more-videos {
       margin-top: calc(var(--gutter) * 4);
       margin-bottom: calc(var(--gutter) * 4);
-      &__content {
-        padding-top: 0;
-        padding-bottom: 0;
-      }
-      &__description { display: block; }
-      &__element,
-      &__information { 
-        @media only screen and (max-width : 1023px){
-          display: none;
-        }
-      }
-      &__title {
-        font-family: var(--f-primary);
-        font-size: var(--ft-normal);
-        color: var(--c-thi-main);
-      }
     }
   }
 
@@ -82,9 +67,7 @@
 
   @media only screen and (min-width : 1024px){
 
-    &__banner {
-      height: 70vh;
-    }
+    &__banner { height: 70vh; }
 
     .season-list {
       margin-right: initial;
@@ -106,27 +89,14 @@
       grid-gap: calc(var(--gutter) * 2);
       grid-template-areas: 'videoRecent moreVideo';
 
-      .recent-video { 
+      .recent-videos { 
         align-self: baseline;
         grid-area: videoRecent; 
       }
-
-      .more-video {
+      .more-videos {
         grid-area: moreVideo;
         margin-top: calc(var(--gutter) * 2);
         align-self: center;
-        &__content {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          grid-template-rows: 1fr;
-        }
-          &__title {
-            font-size: var(--fp-smaller);
-          }
-
-          &__information {
-            font-size: var(--fp-ultrasmaller);
-          }
       }
     }
   }
@@ -138,8 +108,5 @@
       margin-left: auto;
       margin-right: auto;
     }
-
-    
   }
-
 }

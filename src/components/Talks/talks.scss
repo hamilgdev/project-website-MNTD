@@ -33,30 +33,7 @@
     }
   }
 
-  .content-list {
-    margin-bottom: calc(var(--gutter) * 4);
-
-    &__description {
-      display: flex;
-      font-family: var(--f-primary);
-      font-size: var(--fp-smaller);
-      text-transform: uppercase;
-      transition: var(--transition);
-      .icon-eye {
-        fill: var(--c-thi-lighter-100);
-        position: relative;
-        top: 1.5px;
-        margin-right: var(--gutter);
-        width: 24px;
-        height: 16px;
-      }
-      &:hover {
-        color: var(--c-acc-main);
-        background-color: var(--c-pri-darker-200);
-        .icon-eye { fill: var(--c-acc-main); }
-      }
-    }
-  }
+  .talk-videos { margin-bottom: calc(var(--gutter) * 4); }
 
   @media only screen and (min-width : 1024px) {
     margin-top: calc(var(--gutter) * 2);
@@ -82,15 +59,12 @@
         font-size: var(--fs-regular);
       }
       &__btns {
-        .btn {
-          font-size: var(--fp-h6-small);
-        }
+        .btn { font-size: var(--fp-h6-small); }
       }
     }
-    .content-list {
+    .talk-videos {
       grid-area: contentList;
       align-self: baseline;
-      &__title { font-size: var(--fp-h5-regular); }
     }
   }
   @media only screen and (min-width : 1369px) {

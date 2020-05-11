@@ -61,7 +61,6 @@
   }
 
   // .show-nav { transform: translateX(0); }
-
   .network-menu {
     display: flex;
     flex-direction: column;
@@ -139,13 +138,10 @@
     .btn-menu {
       display: none;
     }
-
     .logo,
     .logo-mobile {
       width: 54px;
     }
-
-
     .main-nav {
       position: initial;
       left: 0;

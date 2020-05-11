@@ -1,0 +1,99 @@
+.recent-video {
+  display: block;
+  margin-left: var(--gutter);
+  margin-right: var(--gutter);
+  margin-top: var(--gutter);
+  margin-bottom: calc(var(--gutter) * 2);
+  .banner-video {
+    position: relative;
+  }
+    .icon-play {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      fill: var(--c-sec-darker-200);
+    }
+    .title-video {
+      display: none;
+    }
+  @media only screen and (min-width : 1024px){
+    .title-video {
+      position: absolute;
+      display: initial;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      padding: var(--gutter);
+      color: var(--c-acc-main);
+      font-size: var(--fp-h6-small);
+      font-family: var(--f-primary);
+      background-color: var(--c-thi-main);
+      text-align: center;
+      opacity: 95%;
+    }
+  }
+} 
+.more-video {
+  .banner-video,
+  .description-video {
+    @media only screen and (max-width : 1023px){
+      display: none;
+    }
+  }
+  .data-video {
+    background-color: var(--c-fou-lighter-100);
+    border-radius: var(--border-radius);
+  }
+    .title-video {
+      margin-top: var(--gutter);
+      margin-bottom: var(--gutter);
+      padding: var(--gutter);
+      font-family: var(--f-primary);
+      font-size: var(--fp-h6-small);
+      color: var(--c-thi-main);
+    }
+@media only screen and (min-width : 1024px) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto; 
+  align-items: center;
+  height: fit-content;
+  margin: var(--gutter);
+  padding-bottom: var(--gutter);
+  border-bottom: 1px solid var(--c-fou-main);
+  transition: var(--transition);
+  &:hover {
+    border-color: var(--c-sec-lighter-200);
+  }
+  .banner-video {
+    position: relative;
+    display: initial;
+  }
+    .icon-play {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      height: 28px;
+      width: 28px;
+      transform: translate(-50%, -50%);
+      fill: var(--c-sec-darker-200);
+    }
+  .data-video {
+    padding-left: var(--gutter);
+    padding-right: var(--gutter);
+    background-color: initial;
+    border-radius: initial;
+  }
+    .title-video {
+      font-size: var(--fp-smaller);
+      margin-top: initial;
+      margin-bottom: initial;
+      padding: initial;
+    }
+    .description-video {
+      font-size: var(--fp-ultrasmaller);
+      color: var(--c-thi-lighter-100);
+    }
+  }
+}

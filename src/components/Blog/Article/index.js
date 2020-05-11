@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import "./article.scss";
-import IconTwitter from "../../../images/svg/icons/icon-twitter.svg";
-import IconFacebook from "../../../images/svg/icons/icon-facebook.svg";
-import IconLinkedin from "../../../images/svg/icons/icon-linkedin.svg";
-// import IconRead from "../../../images/svg/icons/icon-read.svg";
-import IconRowLeft from "../../../images/svg/icons/icon-rowleft.svg";
+import IconTwitter from "../../../assets/svg/icons/icon-twitter.svg";
+import IconFacebook from "../../../assets/svg/icons/icon-facebook.svg";
+import IconLinkedin from "../../../assets/svg/icons/icon-linkedin.svg";
+// import IconRead from "../../../assets/svg/icons/icon-read.svg";
+import IconRowLeft from "../../../assets/svg/icons/icon-rowleft.svg";
 
 export default class Article extends Component {
   render() {

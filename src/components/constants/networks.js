@@ -1,11 +1,11 @@
 import React from "react"
 
-import IconTwitter from "../../images/svg/icons/icon-twitter.svg";
-import IconGithub from "../../images/svg/icons/icon-github.svg";
-import IconLinkedin from "../../images/svg/icons/icon-linkedin.svg";
-import IconTwitch from "../../images/svg/icons/icon-twitch.svg";
-import IconYoutube from "../../images/svg/icons/icon-youtube.svg";
-import IconEmail from "../../images/svg/icons/icon-email.svg";
+import IconTwitter from "../../assets/svg/icons/icon-twitter.svg";
+import IconGithub from "../../assets/svg/icons/icon-github.svg";
+import IconLinkedin from "../../assets/svg/icons/icon-linkedin.svg";
+import IconTwitch from "../../assets/svg/icons/icon-twitch.svg";
+import IconYoutube from "../../assets/svg/icons/icon-youtube.svg";
+import IconEmail from "../../assets/svg/icons/icon-email.svg";
 
 let iconTwitter = () => <IconTwitter />,
     iconGithub = () => <IconGithub />,
@@ -18,7 +18,7 @@ export const networks = {
   twitter: {
     title: 'Twitter',
     nickname: '@julian_duque',
-    arial_label: 'Network-Twitter',
+    arialLabel: 'Network-Twitter',
     url: 'https://twitter.com/julian_duque',
     icon:  iconTwitter()
   },

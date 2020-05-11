@@ -1,0 +1,27 @@
+
+.item-video {
+  display: flex;
+  width: 100%;
+  margin-top: var(--gutter);
+  margin-bottom: var(--gutter);
+  padding: var(--gutter);
+  border-radius: var(--border-radius);
+  color: var(--c-thi-lighter-100);
+  font-family: var(--f-primary);
+  font-size: var(--fp-smaller);
+  text-transform: uppercase;
+  transition: var(--transition);
+  cursor: pointer;
+  border-color: var(--c-acc-main);
+  .icon-eye {
+    fill: var(--c-thi-lighter-100);
+    margin-right: var(--gutter);
+    width: 24px;
+    height: 16px;
+  }
+  &:hover {
+    color: var(--c-acc-main);
+    background-color: var(--c-pri-darker-200);
+    .icon-eye { fill: var(--c-acc-main); }
+  }
+}

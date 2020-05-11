@@ -1,0 +1,94 @@
+.out-post {
+  display: block;
+  margin-top: calc(var(--gutter) / 2);
+  margin-bottom: calc(var(--gutter) / 2);
+  font-family: var(--f-primary);
+  text-transform: uppercase;
+  font-size: var(--fp-ultrasmaller);
+  color: var(--c-thi-lighter-100);
+  &:hover { text-decoration: underline; }
+  .icon-rowleft {
+    margin-right: 8px;
+    fill: var(--c-thi-lighter-100);
+    svg {
+      width: 8px;
+      height: 8px;
+    }
+  }
+  @media only screen and (min-width : 1024px) {
+
+  }
+}
+
+.input-post {
+  display: block;
+  margin-top: calc(var(--gutter) * 2);
+  margin-bottom: calc(var(--gutter) * 2);
+
+  .post-article {
+    position: relative;
+    margin: var(--gutter) auto;
+    padding: 0 var(--gutter);
+    max-width: 600px;
+    background-color: var(--c-acc-main);
+    border-radius: var(--border-radius);
+    transition: var(--transition);  
+
+    &__title { 
+      padding: var(--gutter) 0;
+      font-family: var(--f-primary);
+      font-size: var(--fp-smaller);
+      color: var(--c-thi-main);
+      text-transform: uppercase;
+    }
+
+    &__description { 
+      padding-bottom: var(--gutter);
+      font-family: var(--f-secondary);
+      font-size: var(--fs-smaller);
+      color: var(--c-thi-lighter-100); 
+    }
+    @media only screen and (min-width : 1024px) {
+      margin: initial;
+      max-width: initial;
+      .icon-blog {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: scale(0);
+        transition: var(--transition);
+      }
+      &:hover {
+        background-color: var(--c-fou-darker-100);
+        .icon-blog { 
+          transform: translate(-50%, -50%);
+          background-color: var(--c-acc-main); 
+        }
+        .icon-read { fill: var(--c-fou-darker-100); }
+      }
+    }
+  }
+  .icon-blog {
+    display: none;
+    @media only screen and (min-width : 1024px){
+      display: grid;
+      border-radius: 50%;
+      width: 48px;
+      height: 48px;
+      .icon-read {
+        position: relative;
+        top: 3.5px;
+        padding: 8px;
+        fill: var(--c-fou-darker-100);
+      }
+    }
+   }
+
+  @media only screen and (min-width : 1024px) {
+    margin: initial;
+    .last-post {
+      .post-article__title { font-size: var(--fp-h4-normal); }
+      .post-article__description { font-size: var(--fp-h5-regular); }
+    }
+  }
+}
