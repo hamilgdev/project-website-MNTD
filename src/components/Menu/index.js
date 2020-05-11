@@ -1,8 +1,10 @@
-import React from "react"
-import { Link } from 'gatsby'
-import Logo from "../../images/svg/logo.svg";
-import { networks } from "../constants/networks";
-import Network from "./Network"
+import React from 'react';
+import { Link } from 'gatsby';
+
+// import mini components 
+import IconNetwork from '../utils/icon-networks/index';
+import Logo from "../../assets/svg/logo.svg";
+import { networks } from '../constants/networks';
 
 import "./menu.scss"
 
@@ -96,9 +98,9 @@ class Menu extends React.Component {
           </li>
         </ul>
         <div className="network-menu">
-          <Network {...networks.twitter} />
-          <Network {...networks.twitch} />
-          <Network {...networks.youtube} />
+          <IconNetwork name="menu-network" {...networks.twitter} />
+          <IconNetwork name="menu-network" {...networks.twitch} />
+          <IconNetwork name="menu-network" {...networks.youtube} />
         </div>
       </nav>
       <button

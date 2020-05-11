@@ -1,10 +1,14 @@
-import React, { Component } from "react";
+import React from 'react';
 
-import IconRead from "../../images/svg/icons/icon-read.svg";
+// import mini components
+import CardPost from '../utils/cards/card-post/index';
+import CardVideo from '../utils/cards/card-video/index';
+import Button from '../utils/button/index';
+import { seasons } from "../constants/seasons";
 
 import "./home.scss";
 
-export default class Home extends Component {
+class Home extends React.Component {
   render() {
     return (
       <section className="section-home" id="/">
@@ -14,13 +18,12 @@ export default class Home extends Component {
           <h1 className="title section-home__title l-inner-p l-inner-mx32">
             developer advocate at
             <span className="section-home__content-cta">heroku
-              <a 
-              className="btn btn-cta btn-visit" 
-              href="https://www.heroku.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >
-                visit</a>
+              <Button 
+                name="btn-cta"
+                href="https://www.heroku.com/"
+                target="_blank"
+                texto="visit"
+              />
             </span>
           </h1>
 
@@ -31,12 +34,12 @@ export default class Home extends Component {
           <p className="section-home__description l-inner-p">
             stay tuned for more live <span className="tag-nodejs">Node.js</span>
           </p>
-          <a className="btn btn-twitch"
-             href="https://www.twitch.tv/julianduque"
-             target="_blank"
-             rel="noopener noreferrer"
-          >go to twitch
-          </a>
+          <Button 
+            name="btn-twitch"
+            href="https://www.twitch.tv/julianduque"
+            target="_blank"
+            texto="go to twitch"
+          />
         </div>
 
         <div className="content-recommended recommended l-inner-p">
@@ -45,92 +48,58 @@ export default class Home extends Component {
             mis recomendados
           </h2>
 
-          <div className="recent-videos l-outer-mx32">
+          <div className="recent-videos__content l-outer-mx32">
 
-            <h3 className="title recent-videos__title l-outer-m">
+            <h3 className="title recent-videos-title l-outer-m">
               videos más recientes
             </h3>
 
-            <div className="card-widget__element highlight-video ratio-video">
-              <iframe 
-                title="videoHome"
-                src="https://www.youtube.com/embed/Imeq3GeRttw?controls=0" frameBorder="0" 
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-              >
-              </iframe>
-            </div>
-
-            <div className="card-widget__element ratio-video">
-              <iframe 
-              title="videoHome"
-                src="https://www.youtube.com/embed/Imeq3GeRttw?controls=0" frameBorder="0" 
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-              >
-              </iframe>
-            </div>
-
-            <div className="card-widget__element ratio-video">
-              <iframe 
-              title="videoHome"
-                src="https://www.youtube.com/embed/Imeq3GeRttw?controls=0" frameBorder="0" 
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-              >
-              </iframe>
-            </div>
+            <CardVideo 
+              nameList="recent-video"
+              url="#"
+              banner={seasons.season01.episode01.banner()}
+              title={seasons.season01.episode01.title}
+            />
+            <CardVideo 
+              nameList="recent-video"
+              url="#"
+              banner={seasons.season01.episode01.banner()}
+              title={seasons.season01.episode01.title}
+            />
+            <CardVideo 
+              nameList="recent-video"
+              url="#"
+              banner={seasons.season01.episode01.banner()}
+              title={seasons.season01.episode01.title}
+            />
 
           </div>
 
-          <div className="last-posts l-outer-mx32">
+          <div className="recent-posts__content l-outer-mx32">
 
-            <h3 className="title last-posts__title l-outer-m">ultima publicación</h3>
+            <h3 className="title recent-posts-title l-outer-m">publicaciones recientes</h3>
             
-            <a className="post-link highlight-post" href="#" aria-label="posts">
-              <article className="post-article last-post">
-                <h2 className="post-article__title">
-                  Deploying Node.js microservices to ZEIT ▲ Now
-                </h2>
-                <p className="post-article__description">
-                  ZEIT Now is a cloud platform to deploy serverless applications, one of the things I like the most about Now is their DX (Developer Experience), it makes it very pleasant to deploy microservices to the cloud...
-                </p>
-                <div className="icon icon-blog">
-                  <span className="icon-read">
-                    <IconRead />
-                  </span>
-                </div>
-              </article>
-            </a>
-
-            <a className="post-link" href="#" aria-label="posts">
-              <article className="post-article last-post">
-                <h2 className="post-article__title">
-                  Deploying Node.js microservices to ZEIT ▲ Now
-                </h2>
-                <p className="post-article__description">
-                  ZEIT Now is a cloud platform to deploy serverless applications, one of the things I like the most about Now...
-                </p>
-                <div className="icon icon-blog">
-                  <span className="icon-read">
-                    <IconRead />
-                  </span>
-                </div>
-              </article>
-            </a>
-
-            <a className="post-link" href="#" aria-label="posts">
-              <article className="post-article last-post">
-                <h2 className="post-article__title">
-                  Deploying Node.js microservices to ZEIT ▲ Now
-                </h2>
-                <p className="post-article__description">
-                  ZEIT Now is a cloud platform to deploy serverless applications, one of the things I like the most about Now...
-                </p>
-                <div className="icon icon-blog">
-                  <span className="icon-read">
-                    <IconRead />
-                  </span>
-                </div>
-              </article>
-            </a>
+            <CardPost 
+              nameList="input-post"
+              url="#"
+              namePost="last-post"
+              title="Deploying Node.js microservices to ZEIT ▲ Now"
+              description="ZEIT Now is a cloud platform to deploy serverless applications, one of the things I like the most about Now..."
+            />
+            <CardPost 
+              nameList="input-post"
+              url="#"
+              namePost="last-post"
+              title="Deploying Node.js microservices to ZEIT ▲ Now"
+              description="ZEIT Now is a cloud platform to deploy serverless applications, one of the things I like the most about Now..."
+            />
+            <CardPost 
+              nameList="input-post"
+              url="#"
+              namePost="last-post"
+              title="Deploying Node.js microservices to ZEIT ▲ Now"
+              description="ZEIT Now is a cloud platform to deploy serverless applications, one of the things I like the most about Now is their DX (Developer Experience), it makes it very pleasant to deploy microservices to the cloud..."
+            />
 
           </div>
 
@@ -140,3 +109,5 @@ export default class Home extends Component {
     );
   }
 }
+
+export default Home;

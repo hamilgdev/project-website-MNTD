@@ -1,0 +1,14 @@
+.btn,
+.btn-cta {
+  padding: 4px 48px;
+  font-family: var(--f-primary);
+  text-transform: uppercase;
+  color: var(--c-acc-main);
+  background-color: var(--c-sec-darker-200);
+  font-size: var(--fp-h4-normal);
+  border-radius: 10px;
+  transition: .3s ease-out;
+    &:hover { background-color: var(--c-sec-lighter-200); }
+}
+
+.btn-cta { background-color: var(--c-sec-main); }

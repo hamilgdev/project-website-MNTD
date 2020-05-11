@@ -2,7 +2,7 @@
 
   .content-banner {
     position: relative;
-    background-image: url("../../images/banner_home.jpg");
+    background-image: url("../../assets/img/banner_home.jpg");
     background-position: 65% center;
     background-size: cover;
     height: 98vh;
@@ -76,36 +76,12 @@
       }
     }
     
-    .recent-videos {
-
-      &__title {
-        font-size: var(--fp-h5-regular);
-      }
-      // contenedor de video
-      .card-widget {
-        &__element {
-          @media only screen and (min-width : 1024px) {
-            margin: 0;
-          }
-        }
-      }
+    .recent-videos__content {
+      .recent-videos-title { font-size: var(--fp-h5-regular); }
     }
 
-    .last-posts {
-      
-      &__title {
-        font-size: var(--fp-h5-regular);
-      }
-
-      .post-link {
-        margin-top: calc(var(--gutter) * 2);
-        margin-bottom: calc(var(--gutter) * 2);
-
-        @media only screen and (min-width : 1024px) {
-          margin: 0;
-        }
-      }
-
+    .recent-posts__content {
+      .recent-posts-title { font-size: var(--fp-h5-regular); }
     }
 
   }
@@ -138,7 +114,6 @@
     &__description {
       font-size: var(--fp-h4-normal);
     }
-
 
   }
 
@@ -180,8 +155,8 @@
         font-size: var(--fp-h2-subtitle);
       }
 
-      .recent-videos,
-      .last-posts {
+      .recent-videos__content,
+      .recent-posts__content {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 42px auto auto;
@@ -189,55 +164,80 @@
         margin: calc(var(--gutter) * 2) 0;
       }
 
-      .recent-videos {
+      .recent-videos__content {
         grid-area: recentVideos;
         grid-template-areas: 'titleRecent titleRecent'
                              'highlightVideo highlightVideo'
                              'leftVideo rightVideo';
 
-        &__title { 
+        .recent-videos-title { 
           grid-area: titleRecent; 
           font-size: var(--fp-h4-normal);
           margin: 0;
         }
 
-        .highlight-video { grid-area: highlightVideo; }
+        // estilos para los Card videos - Home
+        > a { 
+          margin: 0; 
+          .title-video { display: none; }
+        }
 
-        &__item:nth-child(3) { grid-area: leftVideo; }
+        > a:nth-last-child(1) { 
+          grid-area: highlightVideo; 
+        }
 
-        &__item:nth-child(4) { grid-area: rightVideo; }
+        > a:nth-child(2) { 
+          grid-area: leftVideo; 
+          .icon-play {
+            height: 28px;
+            width: 28px;
+          }
+        }
+
+        > a:nth-child(3) { 
+          grid-area: rightVideo;
+          .icon-play {
+            height: 28px;
+            width: 28px;
+          }
+        }
+
+        @media only screen and (max-width : 1369px){
+          align-self: baseline;
+        } 
       }
 
-      .last-posts {
+      .recent-posts__content {
         grid-area: lastPosts;
         grid-template-areas: 'titleLast titleLast'
                              'leftPost rightPost'
                              'highlightPost highlightPost';
 
-        &__title { 
+        .recent-posts-title  { 
           grid-area: titleLast; 
           font-size: var(--fp-h4-normal);
           margin: 0;
         }
 
-        .post-link:nth-child(3) { grid-area: leftPost; }
-        
-        .post-link:nth-child(4) { grid-area: rightPost; }
-
-        .highlight-post { 
-          grid-area: highlightPost; 
-
-          .post-article {
-
-            &__title {
-              font-size: var(--fp-h4-normal);
+        .input-post { 
+          .last-post {
+            .post-article__title { font-size: var(--fp-smaller);
             }
-
-            &__description {
-              font-size: var(--fs-regular);
-            }
+            .post-article__description { font-size: var(--fs-smaller); }
           }
         }
+
+        > a:nth-last-child(1) { 
+          grid-area: highlightPost; 
+          .post-article {
+            &__title { font-size: var(--fp-h5-regular) !important; }
+            &__description { font-size: var(--fs-small) !important; }
+          }
+        }
+
+        > a:nth-child(2) { grid-area: leftPost; }
+
+        > a:nth-child(3) { grid-area: rightPost; }
       }
     }
   }

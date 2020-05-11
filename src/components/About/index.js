@@ -1,12 +1,14 @@
-import React, { Component } from "react";
-import Julian from "../images/julian";
+import React from "react";
+
+// import mini components 
+import Julian from "../images/julian_profile";
 import Logo from "../images/logo_mntd";
+import IconNetwork from '../utils/icon-networks/index';
 import { networks } from "../constants/networks";
-import Network from "./Network"
 
 import "./about.scss";
 
-class About extends Component {
+class About extends React.Component {
   render() {
     return (
       <section className="section-about" id="about">
@@ -31,12 +33,12 @@ class About extends Component {
           <div className="section-contact l-inner-px32">
             <h3 className="section-contact__title">contact me</h3>
             <div className="section-contact__networks">
-              <Network {...networks.twitter} />
-              <Network {...networks.github} />
-              <Network {...networks.linkedin} />
-              <Network {...networks.twitch} />
-              <Network {...networks.youtube} />
-              <Network {...networks.email} />
+              <IconNetwork name="about-network" {...networks.twitter} />
+              <IconNetwork name="about-network" {...networks.github} />
+              <IconNetwork name="about-network" {...networks.linkedin} />
+              <IconNetwork name="about-network" {...networks.twitch} />
+              <IconNetwork name="about-network" {...networks.youtube} />
+              <IconNetwork name="about-network" {...networks.email} />
             </div>
           </div>
         </div>

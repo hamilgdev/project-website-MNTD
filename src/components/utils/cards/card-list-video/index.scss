@@ -1,0 +1,28 @@
+.card {
+  background-color: var(--c-acc-main);
+  border-radius: var(--border-radius);
+
+  &-data {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--gutter);
+  }
+
+    &-title,
+    &-subtitle { 
+      font-size: var(--ft-normal);
+      text-transform: uppercase; 
+      font-family: var(--f-primary);
+    }
+    &-title {
+      color: var(--c-thi-main);
+    }
+    &-subtitle {
+      color: var(--c-fou-main);
+    }
+
+  &-elements {
+    padding: var(--gutter);
+  }
+}
