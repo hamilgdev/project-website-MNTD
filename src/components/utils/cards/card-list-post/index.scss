@@ -6,6 +6,9 @@
     margin: 0;
     padding: calc(var(--gutter) / 2) 0;
     font-size: var(--fp-h6-small); 
+    font-family: var(--f-primary);
+    color: var(--c-thi-lighter-100);
+    text-transform: uppercase;
   }
   &__elements { padding-left: calc(var(--gutter) / 2) }
 }

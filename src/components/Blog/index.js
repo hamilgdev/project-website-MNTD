@@ -114,7 +114,7 @@ class Blog extends Component {
         <div className="more-posts__content">
 
           <CardListPost 
-            name="out-posts"
+            name="more-posts"
             titleList="publicaciones en otros sitios"
             elements={
               <React.Fragment>

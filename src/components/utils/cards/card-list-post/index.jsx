@@ -13,13 +13,10 @@ class CardListPost extends React.Component {
   render(){
     return(
       <div className={`card-post ${this.props.name}`}>
-
-        <h4 className="card-post__title posts-title">{this.props.titleList}</h4>
-
+        <h4 className="card-post__title">{this.props.titleList}</h4>
         <ul className="card-post__elements">
           {this.props.elements}
         </ul>
-        
       </div>
     );
   }

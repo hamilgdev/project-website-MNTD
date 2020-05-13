@@ -22,12 +22,11 @@
 
 .input-post {
   display: block;
-  margin-top: calc(var(--gutter) * 2);
-  margin-bottom: calc(var(--gutter) * 2);
+  margin-top: calc(var(--gutter) * 1);
+  margin-bottom: calc(var(--gutter) * 1);
 
   .post-article {
     position: relative;
-    margin: var(--gutter) auto;
     padding: 0 var(--gutter);
     max-width: 600px;
     background-color: var(--c-acc-main);
